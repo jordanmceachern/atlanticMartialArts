@@ -31,12 +31,13 @@ const Layout = ({ children }: { children?: any }) => {
               <hr />
             </div>
             <Link id='home' to='/'>
+              {`[MMAA Logo]`}
               <div
                 className='mmaalink'
-                style={{
-                  background:
-                    'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893511/qwinn/qwinnlogo_emyfr2.png)',
-                }}
+              // style={{
+              //   background:
+              //     'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893511/qwinn/qwinnlogo_emyfr2.png)',
+              // }}
               ></div>
             </Link>
           </div>
@@ -56,13 +57,30 @@ const Layout = ({ children }: { children?: any }) => {
           >
             CONTACT
           </Link>
+          <Link
+            id='hapkido'
+            className='heading mobile hideThis'
+            to='/hapkido'
+            onClick={toggleHandler}
+          >
+            HAPKIDO
+          </Link>
+          <Link
+            id='taekwondo'
+            className='heading mobile hideThis'
+            to='/taekwondo'
+            onClick={toggleHandler}
+          >
+            TAEKWONDO
+          </Link>
           <DarkMode />
         </nav>
 
         <div
           className='background'
           style={{
-            background: `center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675637511/qwinn/qwinn_awmtfe.jpg)`,
+            background: `center / cover no-repeat url(https://https://wallpaperaccess.com/full/178504.jpg)`,
+            // background: `center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675637511/qwinn/qwinn_awmtfe.jpg)`,
           }}
         ></div>
 

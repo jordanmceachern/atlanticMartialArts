@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/css_pages/Custom404.css';
+import '../components/css_pages/custom404.css';
 import Layout from '../components/Layout';
 
 const Bio = () => {

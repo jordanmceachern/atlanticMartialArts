@@ -1,0 +1,31 @@
+#taekwondoInfo {
+  overflow-y: scroll;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--rgb-background-color, rgba(255, 255, 255, 0.4));
+  z-index: 1;
+}
+
+#taekwondoInfo p {
+  height: min-content;
+  max-width: 700px;
+  overflow-y: scroll;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+  padding: 8px 24px;
+  border-radius: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  #taekwondoInfo,
+  #taekwondoInfo p {
+    text-align: left;
+  }
+}
