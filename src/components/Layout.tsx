@@ -1,9 +1,32 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Carousel from 'react-material-ui-carousel'
 import DarkMode from './DarkMode/DarkMode';
 import { Helmet } from 'react-helmet';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import './Layout.css';
+
+const carouselItems = [
+  {
+    name: 'Tae Kwon Do',
+    desc: 'Man performing kick',
+    src: 'https://images.squarespace-cdn.com/content/v1/5395e728e4b0be7c80fde5a6/1406136810865-WA7YMNX4JXZZ3I5RPSD7/image-asset.jpeg'
+  },
+  {
+    name: 'Hap Ki Do',
+    desc: 'Man demonstrating throwing his opponent',
+    src: 'https://static.wixstatic.com/media/23b9de_5a3af7f73ecd432b912c8a1b7b34d7d9~mv2.jpg/v1/crop/x_0,y_451,w_844,h_715/fill/w_524,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/16422790_1392702457441777_15849785817728.jpg'
+  }
+];
+
+const CarouselItem = ({ item }) => {
+  return (
+    <div className='layout-carousel-item'>
+      <img src={item.src} alt={item.desc} />
+      <p>{item.name}</p>
+    </div>
+  )
+}
 
 const Layout = ({ children }: { children?: any }) => {
   const toggleHandler = () => {
@@ -11,6 +34,8 @@ const Layout = ({ children }: { children?: any }) => {
     const navArr = Array.from(navhtml);
     navArr.forEach((element) => element.classList.toggle('hideThis'));
   };
+
+
   return (
     <ErrorBoundary>
       <>
@@ -75,6 +100,12 @@ const Layout = ({ children }: { children?: any }) => {
           </Link>
           <DarkMode />
         </nav>
+
+        <Carousel>
+          {
+            carouselItems.map((item, i) => <CarouselItem key={i} item={item} />)
+          }
+        </Carousel>
 
         <div
           className='background'
