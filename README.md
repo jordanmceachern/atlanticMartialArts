@@ -6,7 +6,7 @@ To begin:
 
 - Install node_modules by running "npm install".
 - Run in development with "npm start".
-- Build the application and push changes to the gh-pages branch with "npm run deploy". Push changes to master seperately.
+- Build the application and push changes to the gh-pages branch with "npm run dev". Push changes to master seperately.
 
 Notes:
 
