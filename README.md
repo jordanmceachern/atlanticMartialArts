@@ -5,7 +5,7 @@ Gatsby app that composes the atlantic martial arts web application.
 To begin:
 
 - Install node_modules by running "npm install".
-- Run in development with "npm start". To use the subscribe widget in development, you'll need to add the mailchimp api credentials locally in the root ".env.development" file.
+- Run in development with "npm start".
 - Build the application and push changes to the gh-pages branch with "npm run deploy". Push changes to master seperately.
 
 Notes:

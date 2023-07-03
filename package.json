@@ -5,12 +5,14 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "fix": "eslint --fix:all",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@types/react-helmet": "^6.1.6",
     "ansi-html": "0.0.9",
     "ansi-regex": "^6.0.1",
     "cacheable-request": "^10.2.7",
@@ -48,6 +50,6 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^2.2.0",
-    "prettier": "2.8.3"
+    "typescript": "^5.1.6"
   }
 }
