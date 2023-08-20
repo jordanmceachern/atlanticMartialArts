@@ -1,5 +1,4 @@
 import React from 'react';
-import '../components/css_pages/taekwondo.css';
 import Layout from '../components/Layout';
 
 const Taekwondo = () => {

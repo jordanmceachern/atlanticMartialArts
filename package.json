@@ -10,9 +10,6 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.6",
-    "@mui/styles": "^5.13.2",
     "@types/react-helmet": "^6.1.6",
     "ansi-html": "0.0.9",
     "ansi-regex": "^6.0.1",
@@ -35,7 +32,6 @@
     "nth-check": "^2.1.1",
     "parse-path": "^7.0.0",
     "parse-url": "^8.1.0",
-    "postcss": "^8.4.21",
     "react": "^16.14.0",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.2.0",
@@ -47,10 +43,14 @@
     "ws": "^8.12.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.15",
     "eslint": "^8.34.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
+    "gatsby-plugin-postcss": "^6.11.0",
     "gh-pages": "^2.2.0",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   }
 }

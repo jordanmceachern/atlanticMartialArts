@@ -1,14 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const Bio = () => {
+const Kickboxing = () => {
   return (
     <Layout>
-      <div id='custom404'>
-        <p>404 - Page not found</p>
+      <div id='kickboxinginfo'>
+        <p>{`[TBD]`}</p>
       </div>
     </Layout>
   );
 };
 
-export default Bio;
+export default Kickboxing;

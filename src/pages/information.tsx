@@ -1,15 +1,14 @@
 import React from 'react';
-import '../components/css_pages/about.css';
 import Layout from '../components/Layout';
 
-const About = () => {
+const Information = () => {
   return (
     <Layout>
-      <div id='aboutInfo'>
+      <div id='information'>
         <p>{`[TBD]`}</p>
       </div>
     </Layout>
   );
 };
 
-export default About;
+export default Information;
