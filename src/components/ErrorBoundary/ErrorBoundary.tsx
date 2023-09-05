@@ -29,10 +29,10 @@ class ErrorBoundary extends React.Component<ComponentProps, ErrorState> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className='Error'>
+        <div className=''>
           <title>Error!</title>
           <h1>Error!</h1>
-          <div className='Error-message'>
+          <div className=''>
             <p>Oops! Sorry, something went wrong.</p>
             <p>Please take a moment to let us know what happened.</p>
             <p>

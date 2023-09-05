@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[49],{2766:function(e,t,l){l.r(t);var a=l(7294),r=l(835);t.default=()=>a.createElement(r.Z,null,a.createElement("div",{id:"aboutInfo"},a.createElement("p",null,"[TBD]")))}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-72ef70db65c4f15a1b5e.js.map

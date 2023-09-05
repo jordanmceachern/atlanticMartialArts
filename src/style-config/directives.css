@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-toggle:active + nav > .nav-items,
+.nav-toggle:focus + nav > .nav-items {
+  display: flex;
+}

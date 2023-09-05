@@ -3,10 +3,11 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
     "fix": "eslint --fix:all",
     "build": "gatsby build",
+    "build-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css",
     "serve": "gatsby serve",
+    "dev": "gatsby build && gatsby serve",
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {

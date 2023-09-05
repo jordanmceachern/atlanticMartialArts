@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[777],{6419:function(e,l,t){t.r(l);var r=t(7294),a=t(8115);l.default=()=>r.createElement(a.Z,null,r.createElement("div",{id:"kickboxinginfo"},r.createElement("p",null,"[TBD]")))}}]);
+//# sourceMappingURL=component---src-pages-kickboxing-tsx-5ff4693dcfd86eb604cc.js.map

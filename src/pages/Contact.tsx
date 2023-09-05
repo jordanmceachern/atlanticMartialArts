@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
 const Contact = () => {
   return (
-    <Layout>
+    <PageLayout>
       <div id='contactInfo'>
         <div>
           <p id='contactLinkContainer'>
@@ -11,7 +11,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 

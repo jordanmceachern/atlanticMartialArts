@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
 const Kickboxing = () => {
   return (
-    <Layout>
+    <PageLayout>
       <div id='kickboxinginfo'>
         <p>{`[TBD]`}</p>
       </div>
-    </Layout>
+    </PageLayout>
   );
 };
 

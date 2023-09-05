@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
 const App = () => {
-  return <Layout />;
+  return <PageLayout />;
 };
 
 export default App;
