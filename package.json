@@ -5,19 +5,21 @@
   "scripts": {
     "fix": "eslint --fix:all",
     "build": "gatsby build",
-    "build-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css",
+    "build-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css && copyfiles --flat src/style-config/Oswald/*.ttf public",
     "serve": "gatsby serve",
     "dev": "gatsby build && gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "build-tw && gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@types/react-helmet": "^6.1.6",
     "ansi-html": "0.0.9",
     "ansi-regex": "^6.0.1",
     "cacheable-request": "^10.2.7",
+    "copyfiles": "^2.4.1",
     "cross-fetch": "^3.1.5",
     "engine.io": "^6.4.0",
     "eventsource": "^2.0.2",
+    "flowbite": "^1.8.1",
     "gatsby": "^5.6.1",
     "gatsby-plugin-react-helmet": "^6.6.0",
     "gatsby-transformer-remark": "^6.6.0",

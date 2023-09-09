@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[691],{7200:function(t,e,a){a.r(e);var l=a(7294),r=a(9418);e.default=()=>l.createElement(r.Z,null,l.createElement("h1",{className:"my-auto"},"Atlantic Martial Arts / Maritime Martial Arts Academy"))}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-1a9b36f20ace7f38f0fd.js.map

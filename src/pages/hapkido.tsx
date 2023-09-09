@@ -4,7 +4,16 @@ import PageLayout from '../components/PageLayout';
 const Hapkido = () => {
   return (
     <PageLayout>
-      <div id='hapkidoInfo'>
+      <div className='flex flex-col'>
+        <h1>Home of the Canadian HapKiDo Association</h1>
+        <div
+          aria-label='Canadian HapKiDo Association Logo'
+          className='h-32 w-32'
+          style={{
+            background:
+              'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694116502/MMAA_l16096.gif)',
+          }}
+        ></div>
         <p>
           <strong>Hapkido:</strong> meaning "way of coordinated energy"
         </p>
