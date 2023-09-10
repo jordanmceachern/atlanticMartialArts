@@ -11,7 +11,7 @@ const Hapkido = () => {
           className='h-32 w-32'
           style={{
             background:
-              'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694116502/MMAA_l16096.gif)',
+              'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694270488/hapkidoLogo_pupiah.gif)',
           }}
         ></div>
         <p>
