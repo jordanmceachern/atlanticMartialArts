@@ -3,67 +3,77 @@ import React from 'react';
 // Built this using example code from: https://flowbite.com/docs/components/carousel/#:~:text=The%20carousel%20component%20can%20be,the%20JavaScript%20object%20from%20Flowbite.
 export const Carousel = () => (
   <div className='mx-2 sm:mx-16'>
-    <div id='default-carousel' className='relative w-full' data-carousel='static'>
+    <div id='default-carousel' className='relative w-full' data-carousel='slide'>
       {/* Carousel wrapper */}
       <div className='relative h-60 overflow-hidden rounded-lg sm:h-96'>
         {/* Item 1 */}
-        <div className='hidden duration-1000 ease-in-out h-full w-full' data-carousel-item>
-          <iframe
+        <div className='duration-1000 ease-in-out h-full w-full' data-carousel-item>
+          <div
+            aria-label='Photo of School'
             className='h-full w-full'
-            src='https://www.youtube.com/embed/TKEbws4QhEk?si=pFAPDG0EJpce5Sgh&autoplay=1'
-            title='YouTube video player 1'
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            style={{
+              background:
+                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694544887/dojo_vdhf6m.jpg)',
+            }}
           >
-          </iframe>
+            <div className='inset-0 h-full w-full flex items-center justify-center'>
+              <div style={{ backgroundColor: 'rgb(0 0 0 / 70%)' }} className='flex flex-col items-center px-3 py-2 rounded-lg text-white'>
+                <span>We are currently still renovating some parts of our space,</span>
+                <span>but class operation is not affected: <strong className='px-2 py-px hover:underline cursor-pointer' data-carousel-next>see schedule</strong></span>
+              </div>
+            </div>
+          </div>
         </div>
         {/* Item 2 */}
-        <div className='hidden duration-1000 ease-in-out h-full w-full' data-carousel-item>
-          <iframe
+        <div className='duration-1000 ease-in-out h-full w-full bg-black flex justify-center' data-carousel-item>
+          <div
+            aria-label='Photo of young Master Ross'
+            className='h-full w-full sm:w-3/4 md:w-1/2'
+            style={{
+              background:
+                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/v1694555642/turny_kick_ibwvub.jpg)',
+            }}
+          >
+            <div className='inset-0 h-full w-3/4 sm:w-full flex items-center justify-center'>
+              <ul
+                aria-label='class schedule'
+                style={{ backgroundColor: 'rgb(0 0 0 / 70%)' }}
+                className='flex flex-col items-start px-3 py-2 rounded-lg text-white'
+              >
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  HAPKIDO - <span>(ages 13+) Tues/Thu:  6-7pm, Sat: 2:30-3:30pm</span>
+                </li>
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  TAEKWONDO - <span>Mon/Wed/Fri: Kids (ages 5-12) 6-7pm / Adults 7:30-8:30pm</span>
+                </li>
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  KICKBOXING - <span>Tues/Thu: 7:30-8:30pm, Sat: 4-5pm *</span>
+                </li>
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  TODDLER'S CLASS - <span>Sat: 11:30am-12:30pm *</span>
+                </li>
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  WEAPONS TRAINING - <span>Sat: 1pm-2pm *</span>
+                </li>
+                <li className='text-xs sm:text-sm w-full justify-between flex'>
+                  * - [subject to change]
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* <iframe
             className='h-full w-full'
             src='https://www.youtube.com/embed/vRKZLQS4IDk?si=ME0lj9xIsU170iP0'
             title='YouTube video player 2'
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           >
-          </iframe>
-        </div>
-        {/* Item 3 */}
-        <div className='hidden duration-1000 ease-in-out h-full w-full' data-carousel-item>
-          <iframe
-            className='h-full w-full'
-            src='https://www.youtube.com/embed/Sp1hff70HRs?si=KXu4kgCtq72AW9Sg'
-            title='YouTube video player 3'
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          >
-          </iframe>
-        </div>
-        {/* Item 4 */}
-        <div className='hidden duration-1000 ease-in-out h-full w-full' data-carousel-item>
-          <iframe
-            className='h-full w-full'
-            src='https://www.youtube.com/embed/vvYac8jf0aI?si=HBIrbu6Qtffe2GRI'
-            title='YouTube video player 4'
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          >
-          </iframe>
-        </div>
-        {/* Item 5 */}
-        <div className='hidden duration-1000 ease-in-out h-full w-full' data-carousel-item>
-          <iframe
-            className='h-full w-full'
-            src='https://www.youtube.com/embed/DlnIdEpJpGU?si=EiAgfJUjDwSghbwz'
-            title='YouTube video player 5'
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          >
-          </iframe>
+          </iframe> */}
         </div>
       </div>
       {/* Slider indicators */}
       <div className='absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2'>
         <button type='button' className='w-3 h-3 rounded-full' aria-current='true' aria-label='Slide 1' data-carousel-slide-to='0'></button>
         <button type='button' className='w-3 h-3 rounded-full' aria-current='false' aria-label='Slide 2' data-carousel-slide-to='1'></button>
-        <button type='button' className='w-3 h-3 rounded-full' aria-current='false' aria-label='Slide 3' data-carousel-slide-to='2'></button>
-        <button type='button' className='w-3 h-3 rounded-full' aria-current='false' aria-label='Slide 4' data-carousel-slide-to='3'></button>
-        <button type='button' className='w-3 h-3 rounded-full' aria-current='false' aria-label='Slide 5' data-carousel-slide-to='4'></button>
       </div>
       {/* Slider controls */}
       <button type='button' className='absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none' data-carousel-prev>

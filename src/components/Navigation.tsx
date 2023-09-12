@@ -42,35 +42,30 @@ export const Navigation = () => (
       <div className='nav-items hidden sm:flex grow'>
         <div className='fixed bg-white sm:bg-transparent sm:static z-50 grow flex-col sm:z-0 sm:flex sm:flex-row flex-nowrap justify-between w-full'>
           <Link
-            id='information'
             to='/information'
             className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-slate-300 hover:bg-slate-200'
           >
             INFORMATION
           </Link>
           <Link
-            id='contact'
             to='/contact'
             className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-slate-300 hover:bg-slate-200'
           >
             CONTACT
           </Link>
           <Link
-            id='hapkido'
             to='/hapkido'
             className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-slate-300 hover:bg-slate-200'
           >
             HAPKIDO
           </Link>
           <Link
-            id='taekwondo'
             to='/taekwondo'
             className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-slate-300 hover:bg-slate-200'
           >
             TAEKWONDO
           </Link>
           <Link
-            id='kickboxing'
             to='/kickboxing'
             className='px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-slate-300 hover:bg-slate-200'
           >
