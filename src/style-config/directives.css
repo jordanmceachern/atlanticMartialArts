@@ -14,3 +14,43 @@ body {
 .mobile-menu:checked ~ nav > .nav-items {
   display: flex;
 }
+
+.view-more {
+  display: flex;
+}
+
+.view-content-0,
+.view-content-1,
+.view-content-2,
+.view-content-3 {
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  height: 1.5rem;
+  max-height: 1.5rem;
+  overflow-y: hidden;
+}
+
+#view-more-less-0:checked ~ .view-content-0,
+#view-more-less-1:checked ~ .view-content-1,
+#view-more-less-2:checked ~ .view-content-2,
+#view-more-less-3:checked ~ .view-content-3 {
+  -webkit-line-clamp: none;
+  text-overflow: unset;
+  height: unset;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+#view-more-less-0:checked ~ .view-less-0,
+#view-more-less-1:checked ~ .view-less-1,
+#view-more-less-2:checked ~ .view-less-2,
+#view-more-less-3:checked ~ .view-less-3 {
+  display: flex;
+}
+
+#view-more-less-0:checked ~ .view-more-0,
+#view-more-less-1:checked ~ .view-more-1,
+#view-more-less-2:checked ~ .view-more-2,
+#view-more-less-3:checked ~ .view-more-3 {
+  display: none;
+}

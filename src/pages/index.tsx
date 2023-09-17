@@ -10,7 +10,9 @@ const App = () => {
         Atlantic Martial Arts / Maritime Martial Arts Academy
       </h1>
       <Carousel />
-      <Schedule />
+      <div className='flex justify-center m-2 sm:m-16'>
+        <Schedule />
+      </div>
     </PageLayout>
   )
 };

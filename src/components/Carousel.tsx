@@ -3,7 +3,7 @@ import { Carousel as MtwCarousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 
 const CarouselComp = () => (
-  <MtwCarousel className='relative h-72 rounded-lg sm:h-96'>
+  <MtwCarousel className='relative rounded-lg h-full'>
     {/* Item 1 */}
     <div
       aria-label='Photo of School'
@@ -14,8 +14,11 @@ const CarouselComp = () => (
       }}
     >
       <div className='inset-0 h-full w-full flex items-center justify-center'>
-        <div className='bg-black/70 mx-16 flex justify-center px-3 py-2 rounded-lg text-white'>
-          <p className='w-full sm:w-3/4 md:w-1/2'>We are currently still renovating some parts of our space, but class operation is not affected</p>
+        <div
+          aria-label='renovation notice'
+          className='bg-black/50 mx-16 flex justify-center px-3 py-2 rounded-lg text-white'
+        >
+          We are currently still renovating some parts of our space, but class operation is not affected
         </div>
       </div>
     </div>
@@ -31,7 +34,7 @@ const CarouselComp = () => (
 )
 
 export const Carousel = () => (
-  <div className='mx-2 sm:mx-16 flex justify-center'>
+  <div className='mx-2 sm:mx-16 flex justify-center h-72 sm:h-96'>
     <Suspense fallback={<LoadingSpinner />}>
       <CarouselComp />
     </Suspense>
