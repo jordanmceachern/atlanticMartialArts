@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import ErrorBoundary from './ErrorBoundary';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import MetaData from './MetaData';
 
-const PageLayout = ({ children }: { children?: any }) => {
+type PageLayoutProps = {
+  children: ReactNode;
+  currentPathname: string;
+}
+
+const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
+  const currentRoutename = currentPathname.slice(1, currentPathname.length - 1); // to remove the "/" before every route name.
   return (
     <ErrorBoundary>
       <div className='relative flex flex-col h-screen'>
         <MetaData />
-        <Navigation />
+        <Navigation currentRoutename={currentRoutename} />
         <div
           className='z-0 absolute inset-0 opacity-10'
           style={{

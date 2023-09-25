@@ -7,10 +7,10 @@ type PricingProps = {
 
 const Pricing = ({ isBannerWidth }: PricingProps) => (
   <div
-    className='flex flex-grow items-center justify-center rounded-lg'
+    className='flex grow items-center justify-center rounded-lg'
     style={{
       background:
-        'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/steve_sdad_mtrmurray_r949r1.jpg)',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/steve_sdad_mtrmurray_r949r1.jpg)',
     }}
   >
     <ul

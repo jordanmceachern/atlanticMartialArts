@@ -6,6 +6,7 @@
     "fix": "eslint --fix:all",
     "build": "gatsby build",
     "build-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css && copyfiles --flat src/style-config/Oswald/*.ttf public",
+    "watch-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css --watch",
     "serve": "gatsby serve",
     "dev": "gatsby build && gatsby serve",
     "deploy": "build-tw && gatsby build && gh-pages -d public"

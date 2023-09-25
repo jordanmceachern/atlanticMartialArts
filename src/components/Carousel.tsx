@@ -34,7 +34,7 @@ const CarouselComp = () => (
 )
 
 export const Carousel = () => (
-  <div className='mx-2 sm:mx-16 flex justify-center h-72 sm:h-96'>
+  <div className='flex flex-col shrink-0 items-center h-72 sm:h-96'>
     <Suspense fallback={<LoadingSpinner />}>
       <CarouselComp />
     </Suspense>
