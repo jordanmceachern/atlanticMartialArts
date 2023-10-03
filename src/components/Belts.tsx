@@ -13,7 +13,8 @@ export const Belts = () => (
       aria-label='belts description'
       className='flex flex-col bg-black/50 w-full h-full px-4 py-4 items-start justify-start rounded-lg text-white'
     >
-      <ViewMoreLess index={1} title='Belt Representation'>
+      <h2 className='text-md md:text-base w-full flex justify-center underline mb-1'>Belt Representation</h2>
+      <ViewMoreLess index={1}>
         <ul
           aria-label='list of belt colors and descriptions'
           className={`flex flex-col w-full p-4 h-full pt-auto rounded-lg items-start text-white`}

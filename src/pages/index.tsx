@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../components/PageLayout';
-import Carousel from '../components/Carousel';
+import LandingCarousel from '../components/LandingCarousel';
 import Schedule from '../components/Schedule';
 
 const App = ({ location }) => {
@@ -11,7 +11,7 @@ const App = ({ location }) => {
           <h1 className='my-6 sm:my-10 flex justify-center text-lg sm:text-xl text-center'>
             Atlantic Martial Arts Academy
           </h1>
-          <Carousel />
+          <LandingCarousel />
           <div className='flex justify-center rounded-lg'>
             <Schedule />
           </div>

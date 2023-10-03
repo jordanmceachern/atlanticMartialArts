@@ -11,6 +11,23 @@ body {
   font-family: 'oswald', sans-serif;
 }
 
+.scroll-vertical::-webkit-scrollbar,
+.main-content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+.scroll-vertical::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+.scroll-vertical::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
 .mobile-menu:checked ~ nav > .nav-items {
   margin-top: 0;
   opacity: 1;
@@ -28,12 +45,11 @@ body {
 
 .view-content-0,
 .view-content-1,
-.view-content-2,
-.view-content-3 {
+.view-content-2 {
   text-overflow: ellipsis;
+  overflow-y: hidden;
   height: 6rem;
   max-height: 6rem;
-  overflow-y: hidden;
   white-space: initial;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -46,8 +62,7 @@ body {
 
 #view-more-less-0:checked ~ .view-content-0,
 #view-more-less-1:checked ~ .view-content-1,
-#view-more-less-2:checked ~ .view-content-2,
-#view-more-less-3:checked ~ .view-content-3 {
+#view-more-less-2:checked ~ .view-content-2 {
   -webkit-line-clamp: unset;
   text-overflow: initial;
   height: 300px;
@@ -61,14 +76,12 @@ body {
 
 #view-more-less-0:checked ~ .view-less-0,
 #view-more-less-1:checked ~ .view-less-1,
-#view-more-less-2:checked ~ .view-less-2,
-#view-more-less-3:checked ~ .view-less-3 {
+#view-more-less-2:checked ~ .view-less-2 {
   display: flex;
 }
 
 #view-more-less-0:checked ~ .view-more-0,
 #view-more-less-1:checked ~ .view-more-1,
-#view-more-less-2:checked ~ .view-more-2,
-#view-more-less-3:checked ~ .view-more-3 {
+#view-more-less-2:checked ~ .view-more-2 {
   display: none;
 }

@@ -1,22 +1,31 @@
 import React, { Suspense } from 'react';
+import { Carousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
-import ViewMoreLess from './ViewMoreLess';
 import GenChoi from './GenChoi';
 import CkTae from './CkTae';
 import GmMurray from './GmMurray';
 
 export const TaeKwonDoMasters = () => (
   <div
-    aria-label='ancestors of hap ki do'
-    className='flex grow w-full justify-center rounded-lg bg-black/50'
+    aria-label='founders of tae kwon do'
+    className='rounded-lg bg-black/50 text-white flex flex-col items-center h-full w-full'
   >
-    <ViewMoreLess index={2} title='Founders'>
-      <div className='flex'>
+    <h2 className='text-md md:text-base w-full flex justify-center underline my-4'>Founders</h2>
+    <div className='hidden sm:flex flex-nowrap px-2'>
+      <GenChoi />
+      <CkTae />
+      <GmMurray />
+    </div>
+    <div className='px-3 flex'>
+      <Carousel className='flex grow flex-nowrap visible sm:hidden'>
+        {/* Item 1 */}
         <GenChoi />
+        {/* Item 2 */}
         <CkTae />
+        {/* Item 3 */}
         <GmMurray />
-      </div>
-    </ViewMoreLess>
+      </Carousel>
+    </div>
   </div>
 )
 

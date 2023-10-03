@@ -13,7 +13,7 @@ export const ViewMoreLess = ({ children, index, title }: ViewMoreLessProps) => {
 
   return (
     <div className='flex flex-col flex-grow w-full h-full justify-start items-center'>
-      {title && (<h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline mb-1'>{title}</h2>)}
+      {title && (<h2 className='text-md md:text-base w-full flex justify-center underline mb-4'>{title}</h2>)}
       <input className={`view-more-less-${index} hidden`} type='checkbox' id={`view-more-less-${index}`} />
       <div ref={contentRef} className={`view-content-${index} w-full flex flex-col items-start text-start`}>
         {children}

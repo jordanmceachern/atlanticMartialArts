@@ -2,8 +2,10 @@ import React, { Suspense } from 'react';
 import { Carousel as MtwCarousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 
-const CarouselComp = () => (
-  <MtwCarousel className='relative rounded-lg h-full'>
+const LandingCarouselComp = () => (
+  <MtwCarousel
+    className='relative rounded-lg h-full'
+  >
     {/* Item 1 */}
     <div
       aria-label='Photo of School'
@@ -33,12 +35,12 @@ const CarouselComp = () => (
   </MtwCarousel>
 )
 
-export const Carousel = () => (
+export const LazyLandingCarousel = () => (
   <div className='flex flex-col shrink-0 items-center h-72 sm:h-96'>
     <Suspense fallback={<LoadingSpinner />}>
-      <CarouselComp />
+      <LandingCarouselComp />
     </Suspense>
   </div>
 );
 
-export default Carousel;
+export default LazyLandingCarousel;
