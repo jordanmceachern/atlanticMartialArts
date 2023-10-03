@@ -1,15 +1,14 @@
 import React from 'react';
-import '../components/css_pages/custom404.css';
-import Layout from '../components/Layout';
+import PageLayout from '../components/PageLayout';
 
-const Bio = () => {
+const App = ({ location }) => {
   return (
-    <Layout>
-      <div id='custom404'>
-        <p>404 - Page not found</p>
-      </div>
-    </Layout>
-  );
+    <PageLayout currentPathname={location.pathname}>
+      <h1 className='mx-auto my-24'>
+        404: Page Not Found
+      </h1>
+    </PageLayout>
+  )
 };
 
-export default Bio;
+export default App;

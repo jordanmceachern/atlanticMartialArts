@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[617],{6614:function(e,l,t){t.r(l);var r=t(7294),s=t(7768);l.default=()=>r.createElement(s.Z,null,r.createElement("div",{className:"flex flex-col flex-grow items-center justify-center"},r.createElement("div",{className:"grid grid-cols-1 md:grid-cols-2"})))}}]);
+//# sourceMappingURL=component---src-pages-information-tsx-35af49f8dd4704a8c12c.js.map
