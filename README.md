@@ -11,7 +11,7 @@ To begin, in the root directory:
 To deploy to production:
 
 - Run "npm run build-tw" to build tailwind styles.
-- Run "npm run deploy" which will kick off a build and deploy it to the production branch (gh-pages).
+- Run "npm run deploy" which will kick off a gatsby build and then deploy it to the production branch (gh-pages).
 
 Notes:
 

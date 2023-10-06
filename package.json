@@ -9,7 +9,7 @@
     "watch-tw": "npx tailwindcss -i ./src/style-config/directives.css -o ./public/global.css --watch",
     "serve": "gatsby serve",
     "dev": "gatsby build && gatsby serve",
-    "deploy": "build-tw && gatsby build && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.2",

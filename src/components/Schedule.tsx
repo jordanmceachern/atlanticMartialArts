@@ -19,19 +19,19 @@ const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
     >
       <h2 className='text-sm uppercase sm:text-md md:text-base w-full flex justify-center underline mb-1'>SCHEDULE</h2>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        HAPKIDO <div className='ml-8 flex grow justify-end text-end'>(ages 13+) Tues/Thu:  6-7pm, Sat: 2:30-3:30pm</div>
+        HAPKIDO <div className='ml-8 flex grow justify-end text-end'>(ages 13+) Tues/Thu:  6-7pm, Sat: 2-3pm</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         TAEKWONDO <div className='ml-8 flex grow justify-end text-end'>Mon/Wed/Fri: Kids (ages 5-12) 6-7pm / Adults 7:30-8:30pm</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        KICKBOXING <div className='ml-8 flex grow justify-end text-end'>Tues/Thu: 7:30-8:30pm, Sat: 4-5pm*</div>
+        KICKBOXING <div className='ml-8 flex grow justify-end text-end'>Tues/Thu: 7:30-8:30pm, Sat: 3:30-4:30pm*</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        TODDLER'S CLASS <div className='ml-8 flex grow justify-end text-end'>Sat: 11:30am-12:30pm*</div>
+        TODDLER'S CLASS <div className='ml-8 flex grow justify-end text-end'>Sat: 11am-12pm*</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        WEAPONS TRAINING <div className='ml-8 flex grow justify-end text-end'>Sat: 1pm-2pm*</div>
+        WEAPONS TRAINING <div className='ml-8 flex grow justify-end text-end'>Sat: 12:30pm-1:30pm*</div>
       </li>
       <li className='mt-1 text-xs sm:text-sm md:text-md w-full justify-end flex flex-nowrap'>
         [subject to change]*

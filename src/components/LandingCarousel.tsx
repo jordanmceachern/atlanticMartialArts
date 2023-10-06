@@ -29,7 +29,7 @@ const LandingCarouselComp = () => (
       aria-label='Photo of school heavy bags'
       className='ease-in-out h-full w-full'
       style={{
-        background: 'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694872808/smackysmacky_nygpmn.jpg)',
+        background: 'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696238449/smackysmacky_ceo3ob.jpg)',
       }}
     />
   </MtwCarousel>
