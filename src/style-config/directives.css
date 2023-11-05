@@ -16,14 +16,20 @@ body {
   width: 0.5rem;
 }
 
+.murray-content::-webkit-scrollbar {
+  width: 0;
+}
+
 /* Track */
 .scroll-vertical::-webkit-scrollbar-track,
+.murray-content::-webkit-scrollbar-track,
 .main-content::-webkit-scrollbar-track {
   background: #000;
 }
 
 /* Handle */
 .scroll-vertical::-webkit-scrollbar-thumb,
+.murray-content::-webkit-scrollbar-thumb,
 .main-content::-webkit-scrollbar-thumb {
   background: #fff;
 }

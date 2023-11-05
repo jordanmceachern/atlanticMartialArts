@@ -6,7 +6,7 @@ export const Belts = () => (
     className='flex flex-col h-full grow justify-start rounded-lg'
     style={{
       background:
-        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696166600/knifedefense_iry44l.jpg',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701111480/IMG_4996_erzw7l.jpg',
     }}
   >
     <div

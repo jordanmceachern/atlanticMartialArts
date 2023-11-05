@@ -4,6 +4,7 @@ import { LoadingSpinner } from './LoadingSpinner';
 import GmChoi from './GmChoi';
 import CkTae from './CkTae';
 import GmMurray from './GmMurray';
+import MRoss from './MRoss';
 
 export const HapkidoMasters = () => (
   <div
@@ -15,17 +16,18 @@ export const HapkidoMasters = () => (
       <GmChoi />
       <CkTae />
       <GmMurray />
+      <MRoss />
     </div>
-    <div className='px-3 flex'>
-      <Carousel className='flex grow flex-nowrap visible sm:hidden'>
-        {/* Item 1 */}
-        <GmChoi />
-        {/* Item 2 */}
-        <CkTae />
-        {/* Item 3 */}
-        <GmMurray />
-      </Carousel>
-    </div>
+    <Carousel className='flex grow flex-nowrap visible sm:hidden'>
+      {/* Item 1 */}
+      <GmChoi />
+      {/* Item 2 */}
+      <CkTae />
+      {/* Item 3 */}
+      <GmMurray />
+      {/* Item 4 */}
+      <MRoss />
+    </Carousel>
   </div>
 )
 

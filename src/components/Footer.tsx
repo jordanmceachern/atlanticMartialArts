@@ -11,14 +11,6 @@ export const Footer = () => (
             'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694116623/taekwondo_nly8vx.gif)',
         }}
       ></div>
-      <div
-        aria-label='AMMA logo'
-        className='flex h-14 w-14 sm:h-20 sm:w-20 mx-2'
-        style={{
-          background:
-            'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)',
-        }}
-      ></div>
       <div className='flex mb-1 flex-col items-center text-center text-white text-sm sm:text-base max-w-3xl whitespace-nowrap'>
         General Inquiries
         <div className='flex flex-col justify-center'>
@@ -30,14 +22,6 @@ export const Footer = () => (
           </a>
         </div>
       </div>
-      <div
-        aria-label='MMAA logo'
-        className='flex h-14 w-14 sm:h-20 sm:w-20 mx-2'
-        style={{
-          background:
-            'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694116502/MMAA_l16096.gif)',
-        }}
-      ></div>
       <div
         aria-label='hapkido logo'
         className='flex h-14 w-14 sm:h-20 sm:w-20 mx-2'

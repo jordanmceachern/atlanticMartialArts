@@ -16,7 +16,7 @@ const Information = ({ location }) => {
             >
               <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline uppercase mb-1'>Student Oath</h2>
               <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-                While teaching martial and defence skills, the Maritime Martial Arts Academy has a student Oath to be taken at the start of
+                While teaching martial and defense skills, the Atlantic Martial Arts Academy has a student Oath to be taken at the start of
                 any testing, and intended to be kept as a guide to actions in life. The Student Oath is as follows:
               </p>
               <p className='text-xs sm:text-sm md:text-md w-full justify-center flex flex-nowrap'>
@@ -38,7 +38,7 @@ const Information = ({ location }) => {
                 ~
               </p>
               <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-                It is Master Murray's philosophy that training is not about how many medals you win, but how good a person you can become.
+                It was Grand Master Murray's philosophy that training is not about how many medals you win, but how good a person you can become.
                 The martial arts and skills that come with their study are not seen as a method of holding power over others, but rather as
                 a way of self improvement for the student that he or she may have confidence, and help use their skills only for good.
               </p>
@@ -59,8 +59,8 @@ const Information = ({ location }) => {
             >
               <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline uppercase mb-1'>Location</h2>
               <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-                Atlantic Martial Arts (formerly Maritime Martial Arts Academy) is located in the top floor studio of the
-                Multi-Cultural Centre Gym (Old YMCA by exhibition ground), at 28 Saunders Street, Fredericton, New Brunswick).
+                Atlantic Martial Arts Academy is located in the top floor studio of the Multi-Cultural
+                Centre Gym (Old YMCA by exhibition ground), at 28 Saunders Street, Fredericton, New Brunswick.
               </p>
             </div>
           </Banner>

@@ -6,7 +6,7 @@ export const HapkidoDescription = () => (
     className='flex flex-col grow justify-start rounded-lg h-full'
     style={{
       background:
-        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/jump_kick_lxjxmx.jpg',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109339/IMG_5002_esxgbw.jpg',
     }}
   >
     <div

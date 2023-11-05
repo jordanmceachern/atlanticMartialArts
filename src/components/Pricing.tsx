@@ -28,10 +28,13 @@ const Pricing = ({ isBannerWidth }: PricingProps) => (
         THIRD ART <div className='ml-8 flex grow justify-end text-end'>$46 /month</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        TODDLERS <div className='ml-8 flex grow justify-end text-end'>$40 /month</div>
+        TODDLERS <div className='ml-8 flex grow justify-end text-end'>$40 /month or</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        WEAPONS<div className='ml-8 flex grow justify-end text-end'>$15 /art or $40 /month</div>
+        <div className='ml-8 flex grow justify-end text-end'>$280 for October 7, 2023 - June 30, 2024</div>
+      </li>
+      <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
+        WEAPONS<div className='ml-8 flex grow justify-end text-end'>$15 /class or $40 /month</div>
       </li>
       <li className='my-1 text-xs sm:text-sm md:text-md w-full justify-start flex flex-nowrap'>
         Family Discount
@@ -55,10 +58,13 @@ const Pricing = ({ isBannerWidth }: PricingProps) => (
         3 months<div className='ml-8 flex grow justify-end text-end'>10% off</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
+        6 months<div className='ml-8 flex grow justify-end text-end'>15% off</div>
+      </li>
+      <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         12 months<div className='ml-8 flex grow justify-end text-end'>20% off</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-center flex text-center mt-1'>
-        ALL PRICES INCLUDE TAX
+        ALL PRICES INCLUDE TAX - Paid on the 1st of every month
       </li>
     </ul>
   </div>

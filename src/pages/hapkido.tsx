@@ -1,5 +1,6 @@
 import React from 'react';
 import PageLayout from '../components/PageLayout';
+import { Carousel } from "@material-tailwind/react";
 import Banner from '../components/Banner';
 import HapkidoDescription from '../components/HapkidoDescription';
 import Belts from '../components/Belts';
@@ -11,19 +12,35 @@ const Hapkido = ({ location }) => {
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
-          <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1695570360/masters_mu5jtp.jpg'>
-            <div className='flex flex-col bg-black/40 w-full px-4 pt-4 pb-10 md:pb-28 items-center justify-center rounded-lg text-white'>
-              <h1 className='text-sm sm:text-md md:text-base w-full flex items-center justify-center uppercase mb-4 md:mt-10'>Home of the Canadian HapKiDo Association</h1>
-              <div
-                aria-label='Canadian Hapkido Association Logo'
-                className='flex h-28 w-28 sm:h-36 sm:w-36 mt-4 md:mt-10 rounded-full'
-                style={{
-                  background:
-                    'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,b_white,ar_1:1,c_fill,g_auto/v1695582177/hapkidoLogo_pupiah.gif)'
-                }}
-              ></div>
-            </div>
-          </Banner>
+          <Carousel
+            autoplay
+            autoplayDelay={4000}
+            loop
+            className='flex grow flex-nowrap col-start-1 col-end-2 md:col-end-3'
+          >
+            {/* Item 1 */}
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109349/IMG_4995_ucoktv.jpg' className='h-full'>
+              <div className='flex flex-col justify-between h-full bg-black/40 w-full px-4 py-4 rounded-lg text-white'>
+                <h1 className='text-sm sm:text-md md:text-base w-full flex self-center items-center justify-center uppercase md:mt-10'>Home of the Canadian HapKiDo Association</h1>
+                <div
+                  aria-label='Canadian Hapkido Association Logo'
+                  className='flex self-end h-20 w-20 mt-24 sm:mt-56 rounded-full'
+                  style={{
+                    background:
+                      'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,b_white,ar_1:1,c_fill,g_auto/v1695582177/hapkidoLogo_pupiah.gif)'
+                  }}
+                ></div>
+              </div>
+            </Banner>
+            {/* Item 2 */}
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701109336/IMG_5006_cji4ve.jpg' className='h-full' />
+            {/* Item 3 */}
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109343/IMG_5001_1_h8n916.jpg' className='h-full' />
+            {/* Item 4 */}
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109345/IMG_4997_ats0ld.jpg' className='h-full' />
+            {/* Item 5 */}
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1695570360/masters_mu5jtp.jpg' className='h-full' />
+          </Carousel>
           <div className='relative col-start-1 col-end-2 rounded-lg'>
             <HapkidoDescription />
           </div>

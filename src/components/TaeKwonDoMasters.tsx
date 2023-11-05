@@ -4,6 +4,7 @@ import { LoadingSpinner } from './LoadingSpinner';
 import GenChoi from './GenChoi';
 import CkTae from './CkTae';
 import GmMurray from './GmMurray';
+import MRoss from './MRoss';
 
 export const TaeKwonDoMasters = () => (
   <div
@@ -15,17 +16,18 @@ export const TaeKwonDoMasters = () => (
       <GenChoi />
       <CkTae />
       <GmMurray />
+      <MRoss />
     </div>
-    <div className='px-3 flex'>
-      <Carousel className='flex grow flex-nowrap visible sm:hidden'>
-        {/* Item 1 */}
-        <GenChoi />
-        {/* Item 2 */}
-        <CkTae />
-        {/* Item 3 */}
-        <GmMurray />
-      </Carousel>
-    </div>
+    <Carousel className='flex grow flex-nowrap visible sm:hidden'>
+      {/* Item 1 */}
+      <GenChoi />
+      {/* Item 2 */}
+      <CkTae />
+      {/* Item 3 */}
+      <GmMurray />
+      {/* Item 4 */}
+      <MRoss />
+    </Carousel>
   </div>
 )
 

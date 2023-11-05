@@ -4,9 +4,25 @@ import { LoadingSpinner } from './LoadingSpinner';
 
 const LandingCarouselComp = () => (
   <MtwCarousel
+    autoplay
+    autoplayDelay={2700}
     className='relative rounded-lg h-full'
+    loop
   >
     {/* Item 1 */}
+    <div
+      aria-label='Photo of School'
+      className='ease-in-out h-full w-full'
+    >
+      <iframe
+        className='h-full w-full'
+        src='https://www.youtube.com/embed/2-7th58SSNA?si=s0OfLA37DSVi4xXZ&autoplay=1&mute=1&loop=1&playlist=2-7th58SSNA'
+        title='Master Ross brick breaking'
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      >
+      </iframe>
+    </div>
+    {/* Item 2 */}
     <div
       aria-label='Photo of School'
       className='ease-in-out h-full w-full'
@@ -24,7 +40,7 @@ const LandingCarouselComp = () => (
         </div>
       </div>
     </div>
-    {/* Item 2 */}
+    {/* Item 3 */}
     <div
       aria-label='Photo of school heavy bags'
       className='ease-in-out h-full w-full'
