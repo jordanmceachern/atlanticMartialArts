@@ -1030,16 +1030,16 @@ video {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-3 {
   height: 0.75rem;
 }
 
 .h-3\.5 {
   height: 0.875rem;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-4 {
