@@ -2513,6 +2513,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
 .pe-1 {
   padding-inline-end: 0.25rem;
 }
@@ -5393,6 +5397,10 @@ body {
   .sm\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .sm\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .sm\:text-base {
