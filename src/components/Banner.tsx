@@ -22,7 +22,7 @@ export const Banner = ({
           `${backgroundPosition ? backgroundPosition : 'top'} / cover no-repeat ${backgroundImage ? `url(${backgroundImage})` : 'black'}`,
       }}
     >
-      <div className='flex flex-col grow w-full'>
+      <div className='flex flex-col grow w-full rounded-lg'>
         {children}
       </div>
     </div>

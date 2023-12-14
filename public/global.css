@@ -874,10 +874,6 @@ video {
   margin-top: -1.5rem;
 }
 
-.-mt-\[100vh\] {
-  margin-top: -100vh;
-}
-
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1104,6 +1100,11 @@ video {
 
 .h-\[74px\] {
   height: 74px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-full {
@@ -3259,6 +3260,7 @@ body {
   transition-property: margin-top, opacity;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
+  margin-top: -183px;
 }
 
 .view-more {

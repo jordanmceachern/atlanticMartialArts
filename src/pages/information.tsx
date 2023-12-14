@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import { ScheduleTimesLazy } from '../components/Schedule';
 import Pricing from '../components/Pricing';
 import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 
 const Information = ({ location }) => {
   return (

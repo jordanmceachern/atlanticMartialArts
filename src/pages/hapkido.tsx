@@ -16,7 +16,7 @@ const Hapkido = ({ location }) => {
             autoplay
             autoplayDelay={4000}
             loop
-            className='flex grow flex-nowrap col-start-1 col-end-2 md:col-end-3'
+            className='h-80 sm:h-96 flex flex-nowrap rounded-lg col-start-1 col-end-2 md:col-end-3'
           >
             {/* Item 1 */}
             <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109349/IMG_4995_ucoktv.jpg' className='h-full'>
