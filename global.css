@@ -736,10 +736,6 @@ video {
   top: 14%;
 }
 
-.top-\[38px\] {
-  top: 38px;
-}
-
 .top-\[4\%\] {
   top: 4%;
 }
@@ -876,10 +872,6 @@ video {
 
 .-mt-6 {
   margin-top: -1.5rem;
-}
-
-.-mt-\[100vh\] {
-  margin-top: -100vh;
 }
 
 .mb-0 {
@@ -2513,10 +2505,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .pe-1 {
   padding-inline-end: 0.25rem;
 }
@@ -3267,6 +3255,7 @@ body {
   transition-property: margin-top, opacity;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
+  margin-top: -183px;
 }
 
 .view-more {
