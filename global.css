@@ -2509,6 +2509,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pe-1 {
   padding-inline-end: 0.25rem;
 }
