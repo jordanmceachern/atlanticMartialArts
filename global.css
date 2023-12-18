@@ -1106,6 +1106,11 @@ video {
   height: 74px;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
