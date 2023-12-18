@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[691],{7200:function(e,t,a){a.r(t);var l=a(7294),r=a(7768);t.default=e=>{let{location:t}=e;return l.createElement(r.Z,{currentPathname:t.pathname},l.createElement("h1",{className:"mx-auto my-24 flex flex-col grow"},"404: Page Not Found"))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-21be23a4ea544922038a.js.map

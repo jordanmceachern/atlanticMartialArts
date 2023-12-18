@@ -882,6 +882,10 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1534,6 +1538,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -5278,11 +5286,6 @@ body {
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
-  }
-
-  .sm\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
   }
 
   .sm\:my-16 {

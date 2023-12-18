@@ -22,7 +22,7 @@ const CkTae = () => (
       </h3>
       <div className='scroll-vertical h-20 overflow-y-scroll pe-1'>
         <p className='text-xs sm:text-sm mb-1'>
-          Chung Kee Tae (July 25, 1939 – April 6, 2015), born in Daegu City, Korea, was was trained directly under the founders of both Tae Kwon Do (General Choi) and Hapkido (Grand Master Choi Yong-Sool). Master Chung was
+          Chung Kee Tae (July 25, 1939 – April 6, 2015), born in Daegu City, Korea, was trained directly under the founders of both Tae Kwon Do (General Choi) and Hapkido (Grand Master Choi Yong-Sool). Master Chung was
           also the founder and former President of the Canadian Hap Ki Do Association.
         </p>
         <p className='text-xs sm:text-sm mb-1'>

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[218],{2513:function(e,t,a){a.r(t);var r=a(7294),l=a(7768);t.default=e=>{let{location:t}=e;return r.createElement(l.Z,{currentPathname:t.pathname},r.createElement("h1",{className:"mx-auto my-24 h-fit"},"404: Page Not Found"))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-f3cc11dcfb1985344b4d.js.map
