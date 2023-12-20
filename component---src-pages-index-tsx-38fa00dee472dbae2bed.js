@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[691],{7200:function(e,t,a){a.r(t);var r=a(7294),l=a(7768);t.default=e=>{let{location:t}=e;return r.createElement(l.Z,{currentPathname:t.pathname},r.createElement("h1",{className:"mx-auto my-24"},"404: Page Not Found"))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-38fa00dee472dbae2bed.js.map
