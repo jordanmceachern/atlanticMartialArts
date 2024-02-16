@@ -9,7 +9,7 @@ exports.onCreateWebpackConfig = ({actions, plugins, getConfig}) => {
     config.externals[0]['node:crypto'] = require.resolve('crypto-browserify');
   }
   actions.setWebpackConfig({
-    ...config,
+    // ...config,
     resolve: {
       fallback: {
         'crypto': false,
