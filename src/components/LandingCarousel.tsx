@@ -16,7 +16,7 @@ const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
     >
       <iframe
         className='h-full w-full'
-        src='https://www.youtube.com/embed/2-7th58SSNA?si=s0OfLA37DSVi4xXZ&autoplay=1&loop=1&mute=1&playlist=2-7th58SSNA'
+        src='https://www.youtube.com/embed/2-7th58SSNA?si=s0OfLA37DSVi4xXZ&autoplay=1&mute=1&playlist=2-7th58SSNA'
         title='Master Ross brick breaking'
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       >
@@ -31,11 +31,11 @@ const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
           'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1702846637/bradtesting_wepdij.jpg)',
       }}
     >
-      <div className='inset-0 h-full w-full flex items-end justify-center'>
+      {/* <div className='inset-0 h-full w-full flex items-end justify-center'>
         <div className='bg-black/50 mx-2 mb-16 flex px-3 py-2 rounded-lg text-white text-center'>
           Congrats to Mr.Bostick for passing his black belt testing!
         </div>
-      </div>
+      </div> */}
     </div>
     {/* Item 3 */}
     <div
