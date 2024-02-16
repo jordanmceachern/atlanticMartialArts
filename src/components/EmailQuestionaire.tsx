@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@material-tailwind/react';
-import 'dotenv/config';
+import { Banner } from './Banner'
 import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 const mailerSend = new MailerSend({
@@ -68,7 +68,7 @@ export const EmailQuestionaire = () => {
         setEmail(data);
         break;
       case 'personMessage':
-        setEmail(data);
+        setPersonMessage(data);
         break;
       default:
         break;
@@ -94,6 +94,7 @@ export const EmailQuestionaire = () => {
     }
 
     try {
+      console.log('reached')
       const emailParams = new EmailParams()
         .setFrom(sentFrom)
         .setTo(recipients)
@@ -113,32 +114,54 @@ export const EmailQuestionaire = () => {
   };
 
   return (
-    <form ref={formRef} onSubmit={inquire}>
-      <div className='flex flex-col mx-auto'>
-        <input
-          className='px-8 py-2 mb-2 rounded bg-slate/20 dark:bg-white/40 placeholder-slate dark:placeholder-white'
-          type='text'
-          placeholder='first name'
-          name='personName'
-          value={personName}
-          onChange={updateValue}
-          minLength={3}
-          required
-        />
-      </div>
-      {inputError && <p className='text-red mb-2'>{`${inputError}`}</p>}
-      {messageSent && <p className='mb-2'>{messageSent}</p>}
-      <div className='flex justify-center'>
-        <Button
-          className='dark:border dark:border-white'
-          type='submit'
-          value='subscribe'
-          disabled={isDisabled}
-        >
-          Submit
-        </Button>
-      </div>
-    </form>
+    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
+      <form ref={formRef} onSubmit={inquire} className='flex flex-col m-4'>
+        <div className='flex flex-col mx-auto'>
+          <input
+            className='px-8 py-2 mb-2 rounded bg-white/40 placeholder-white'
+            type='text'
+            placeholder='first name'
+            name='personName'
+            value={personName}
+            onChange={updateValue}
+            minLength={3}
+            required
+          />
+          <input
+            className='px-8 py-2 mb-2 rounded bg-white/40 placeholder-white'
+            type='text'
+            placeholder='last name'
+            name='personLastName'
+            value={personLastName}
+            onChange={updateValue}
+            minLength={3}
+            required
+          />
+          <input
+            className='px-8 py-2 mb-4 rounded bg-white/40 placeholder-white'
+            type='text'
+            placeholder='message'
+            name='personMessage'
+            value={personMessage}
+            onChange={updateValue}
+            minLength={3}
+            required
+          />
+        </div>
+        {inputError && <p className='text-red mb-2'>{`${inputError}`}</p>}
+        {messageSent && <p className='mb-2'>{messageSent}</p>}
+        <div className='flex justify-center'>
+          <Button
+            className='dark:border dark:border-white'
+            type='submit'
+            value='subscribe'
+            disabled={isDisabled}
+          >
+            Submit
+          </Button>
+        </div>
+      </form>
+    </Banner>
   )
 }
 
