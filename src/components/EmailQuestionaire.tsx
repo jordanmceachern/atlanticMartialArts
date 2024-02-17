@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@material-tailwind/react';
 import { Banner } from './Banner'
+import { LoadingSpinner } from './LoadingSpinner'
 import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 const mailerSend = new MailerSend({
@@ -36,6 +37,7 @@ export const EmailQuestionaire = () => {
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [inquired, setInquired] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const person_has_inquired = 'person-has-inquired';
     
@@ -82,13 +84,20 @@ export const EmailQuestionaire = () => {
   };
 
   const inquire = async (e) => {
+    setIsSending(true)
     e.preventDefault();
+    console.log('reached 5')
 
     if (!personName || !personLastName || !personEmail) {
+      console.log('reached 4')
+      setIsSending(false);
       return;
     }
+    console.log('reached 3')
 
     if (inquired) {
+      console.log('reached 2')
+      setIsSending(false);
       setMessageSent('You are already on our mailing list :)');
       return;
     }
@@ -105,59 +114,84 @@ export const EmailQuestionaire = () => {
 
       const message = await mailerSend.email.send(emailParams);
       console.log('message test: ', message)
+      setIsSending(false);
       setInputError(false);
       setMessageSent('Thank you, your inquiry has been submitted.');
       setPersonHasInquired();
     } catch (err) {
+      setIsSending(false);
       handleError(err);
     }
   };
 
   return (
-    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
+    <Banner className='bg-black/40' backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
       <form ref={formRef} onSubmit={inquire} className='flex flex-col m-4'>
-        <div className='flex flex-col mx-auto'>
-          <input
-            className='px-8 py-2 mb-2 rounded bg-white/40 placeholder-white'
-            type='text'
-            placeholder='first name'
-            name='personName'
-            value={personName}
-            onChange={updateValue}
-            minLength={3}
-            required
-          />
-          <input
-            className='px-8 py-2 mb-2 rounded bg-white/40 placeholder-white'
-            type='text'
-            placeholder='last name'
-            name='personLastName'
-            value={personLastName}
-            onChange={updateValue}
-            minLength={3}
-            required
-          />
-          <input
-            className='px-8 py-2 mb-4 rounded bg-white/40 placeholder-white'
-            type='text'
-            placeholder='message'
-            name='personMessage'
-            value={personMessage}
-            onChange={updateValue}
-            minLength={3}
-            required
-          />
+        <div className='text-white mb-4 grid grid-cols-1 gap-4 md:grid-cols-2'>
+          <div className='flex flex-col col-start-1 col-end-2'>
+            <input
+              className='px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+              type='text'
+              placeholder='first name'
+              name='personName'
+              value={personName}
+              onChange={updateValue}
+              minLength={3}
+              required
+            />
+            <input
+              className='px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+              type='text'
+              placeholder='last name'
+              name='personLastName'
+              value={personLastName}
+              onChange={updateValue}
+              minLength={3}
+              required
+            />
+            <div className='flex flex-col items-center w-full'>
+              <input
+                className='w-full px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+                type='email'
+                placeholder='your email'
+                name='personEmail'
+                value={personEmail}
+                onChange={updateValue}
+                minLength={9}
+                required
+              />
+              <p className='mb-2 md:mb-0 text-xs text-white'>(Your email will only be used for responding to your inquiry)</p>
+            </div>
+          </div>
+          <div className='col-start-1 col-end-2 md:col-start-2 md:col-end-3 flex flex-col'>
+            <label htmlFor='email_message' className='mb-2 text-sm text-white'>
+              Have you trained in martial arts before? Which arts are you interested in at AMMA?
+            </label>
+            <textarea
+              id='email_message'
+              className='flex flex-grow px-8 py-2 rounded bg-white/20 placeholder-white'
+              placeholder='enter your message'
+              name='personMessage'
+              value={personMessage}
+              onChange={updateValue}
+              minLength={9}
+              maxLength={500}
+              required
+            />
+          </div>
         </div>
-        {inputError && <p className='text-red mb-2'>{`${inputError}`}</p>}
-        {messageSent && <p className='mb-2'>{messageSent}</p>}
-        <div className='flex justify-center'>
+        <div className='flex flex-col items-center '>
+          <div className='max-w-[200px] bg-black/40 py-2 px-4 mb-4 rounded-lg'>
+            {inputError && <p className='text-red'>{`${inputError}`}</p>}
+            {messageSent && <p>{messageSent}</p>}
+          </div>
           <Button
-            className='dark:border dark:border-white'
+            className='flex items-center'
             type='submit'
             value='subscribe'
             disabled={isDisabled}
           >
-            Submit
+            {isSending && (<div className='h-4 w-4 mr-4'><LoadingSpinner /></div>)}Submit
           </Button>
         </div>
       </form>
