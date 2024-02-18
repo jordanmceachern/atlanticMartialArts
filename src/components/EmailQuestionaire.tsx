@@ -2,37 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@material-tailwind/react';
 import { Banner } from './Banner'
 import { LoadingSpinner } from './LoadingSpinner'
-import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
-
-const mailerSend = new MailerSend({
-  apiKey: process.env.GATSBY_API_KEY ?? '',
-});
-
-const sentFrom = new Sender("jordan@atlanticmartialarts.ca", "Your name");
-
-const recipients = [
-  new Recipient("jormceachern@gmail.com", "Your Client")
-];
-
-// const client = new SMTPClient({
-//   user: 'MS_Mh4DSR@atlanticmartialarts.ca', // username for logging into smtp
-//   password: 'VzZwvRjpNwWUPrwO', // password for logging into smtp
-//   host: 'smtp.mailersend.net', // smtp host (defaults to 'localhost')
-//   ssl: true, // boolean or object (if true or object, ssl connection will be made)
-//   port: 587, // smtp port (defaults to 25 for unencrypted, 465 for `ssl`, and 587 for `tls`)
-//   domain: 'atlanticmartialarts.ca', // domain to greet smtp with (defaults to os.hostname)
-//   tls: true // boolean or object (if true or object, starttls will be initiated)
-//   // timeout, // max number of milliseconds to wait for smtp responses (defaults to 5000)
-//   // authentication, // array of preferred authentication methods ('PLAIN', 'LOGIN', 'CRAM-MD5', 'XOAUTH2')
-//   // logger // override the built-in logger (useful for e.g. Azure Function Apps, where console.log doesn't work)
-// });
+import { MailerSend, EmailParams, Sender, Recipient } from 'mailersend';
 
 export const EmailQuestionaire = () => {
   const formRef = useRef(null);
   const [personName, setName] = useState('');
   const [personLastName, setLastName] = useState('');
   const [personMessage, setPersonMessage] = useState('');
-  const [personEmail, setEmail] = useState('');
+  const [personEmail, setPersonEmail] = useState('');
   const [inputError, setInputError] = useState(false);
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
@@ -67,7 +44,7 @@ export const EmailQuestionaire = () => {
         setLastName(data);
         break;
       case 'personEmail':
-        setEmail(data);
+        setPersonEmail(data);
         break;
       case 'personMessage':
         setPersonMessage(data);
@@ -86,34 +63,34 @@ export const EmailQuestionaire = () => {
   const inquire = async (e) => {
     setIsSending(true)
     e.preventDefault();
-    console.log('reached 5')
 
-    if (!personName || !personLastName || !personEmail) {
-      console.log('reached 4')
+    if (!personName || !personLastName || !personEmail || !personMessage) {
       setIsSending(false);
       return;
     }
-    console.log('reached 3')
 
     if (inquired) {
-      console.log('reached 2')
       setIsSending(false);
       setMessageSent('You are already on our mailing list :)');
       return;
     }
 
     try {
-      console.log('reached')
+      const mailerSend = new MailerSend({
+        apiKey: process.env.MAILERSEND_API_KEY ?? '',
+      });
+      const recipients = [
+        new Recipient('jormceachern@gmail.com', 'atlanticmartialarts@hotmail.com')
+      ];
+      const sentFrom = new Sender(personEmail, `${personName} ${personLastName}`);
       const emailParams = new EmailParams()
         .setFrom(sentFrom)
         .setTo(recipients)
         .setReplyTo(sentFrom)
-        .setSubject("This is a Subject")
-        .setHtml("<strong>This is the HTML content</strong>")
-        .setText("This is the text content");
+        .setSubject(`atlanticmartialarts.ca student inquiry from ${personName} ${personLastName}`)
+        .setText(personMessage);
 
-      const message = await mailerSend.email.send(emailParams);
-      console.log('message test: ', message)
+      await mailerSend.email.send(emailParams);
       setIsSending(false);
       setInputError(false);
       setMessageSent('Thank you, your inquiry has been submitted.');
@@ -125,12 +102,13 @@ export const EmailQuestionaire = () => {
   };
 
   return (
-    <Banner className='bg-black/40' backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
-      <form ref={formRef} onSubmit={inquire} className='flex flex-col m-4'>
-        <div className='text-white mb-4 grid grid-cols-1 gap-4 md:grid-cols-2'>
+    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
+      <form ref={formRef} onSubmit={inquire} className='bg-black/40 text-white flex flex-col p-4 items-center rounded-md'>
+        <h2 className='text-sm sm:text-md md:text-base mb-4 underline'>STUDENT INQUIRY</h2>
+        <div className='mb-4 grid grid-cols-1 md:gap-4 md:grid-cols-2'>
           <div className='flex flex-col col-start-1 col-end-2'>
             <input
-              className='px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+              className='px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
               type='text'
               placeholder='first name'
               name='personName'
@@ -140,7 +118,7 @@ export const EmailQuestionaire = () => {
               required
             />
             <input
-              className='px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+              className='px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
               type='text'
               placeholder='last name'
               name='personLastName'
@@ -151,7 +129,7 @@ export const EmailQuestionaire = () => {
             />
             <div className='flex flex-col items-center w-full'>
               <input
-                className='w-full px-8 py-2 mb-2 rounded bg-white/20 placeholder-white'
+                className='w-full px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
                 type='email'
                 placeholder='your email'
                 name='personEmail'
@@ -164,12 +142,12 @@ export const EmailQuestionaire = () => {
             </div>
           </div>
           <div className='col-start-1 col-end-2 md:col-start-2 md:col-end-3 flex flex-col'>
-            <label htmlFor='email_message' className='mb-2 text-sm text-white'>
+            <label htmlFor='email_message' className='mb-2 text-sm md:text-md text-white'>
               Have you trained in martial arts before? Which arts are you interested in at AMMA?
             </label>
             <textarea
               id='email_message'
-              className='flex flex-grow px-8 py-2 rounded bg-white/20 placeholder-white'
+              className='flex flex-grow min-h-[120px] px-8 py-2 rounded bg-black/30 placeholder-white resize-none text-sm md:text-md'
               placeholder='enter your message'
               name='personMessage'
               value={personMessage}
@@ -181,15 +159,19 @@ export const EmailQuestionaire = () => {
           </div>
         </div>
         <div className='flex flex-col items-center '>
-          <div className='max-w-[200px] bg-black/40 py-2 px-4 mb-4 rounded-lg'>
-            {inputError && <p className='text-red'>{`${inputError}`}</p>}
-            {messageSent && <p>{messageSent}</p>}
-          </div>
+          {
+            (inputError || messageSent) && (
+              <div className='max-w-[200px] bg-black/30 py-2 px-4 mb-4 rounded-lg text-sm sm:text-md'>
+                {inputError && <p className='text-red'>{`${inputError}`}</p>}
+                {messageSent && <p>{messageSent}</p>}
+              </div>
+            )
+          }
           <Button
             className='flex items-center'
             type='submit'
             value='subscribe'
-            disabled={isDisabled}
+            disabled={isDisabled || inquired}
           >
             {isSending && (<div className='h-4 w-4 mr-4'><LoadingSpinner /></div>)}Submit
           </Button>
