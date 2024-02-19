@@ -61,7 +61,7 @@ body {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-
+  
   transition-property: height, max-height;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
@@ -75,7 +75,7 @@ body {
   height: 300px;
   max-height: 300px;
   overflow-y: scroll;
-
+  
   transition-property: height, max-height;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;

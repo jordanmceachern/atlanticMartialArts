@@ -1,21 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@material-tailwind/react';
 import { Banner } from './Banner'
 import { LoadingSpinner } from './LoadingSpinner'
-import { MailerSend, EmailParams, Sender, Recipient } from 'mailersend';
+import { useForm } from '@formspree/react';
 
 export const EmailQuestionaire = () => {
-  const formRef = useRef(null);
-  const [personName, setName] = useState('');
-  const [personLastName, setLastName] = useState('');
-  const [personMessage, setPersonMessage] = useState('');
-  const [personEmail, setPersonEmail] = useState('');
   const [inputError, setInputError] = useState(false);
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [inquired, setInquired] = useState(false);
-  const [isSending, setIsSending] = useState(false);
-
+  
+  const [formState, handleSubmit] = useForm('mqkrbazg');
   const person_has_inquired = 'person-has-inquired';
     
   useEffect(() => {
@@ -28,31 +23,10 @@ export const EmailQuestionaire = () => {
     }
   }, []);
 
-  const setPersonHasInquired = () =>
+  const cachePersonHasInquired = () => {
+    setInquired(true);
     window?.localStorage.setItem(person_has_inquired, 'true');
-
-  const updateValue = (e) => {
-    e.preventDefault();
-    const inputName = e.target.name;
-    const data = e.target.value;
-
-    switch (inputName) {
-      case 'personName':
-        setName(data);
-        break;
-      case 'personLastName':
-        setLastName(data);
-        break;
-      case 'personEmail':
-        setPersonEmail(data);
-        break;
-      case 'personMessage':
-        setPersonMessage(data);
-        break;
-      default:
-        break;
-    }
-  };
+  }
 
   const handleError = (err) => {
     console.error(err);
@@ -60,50 +34,28 @@ export const EmailQuestionaire = () => {
     setIsDisabled(true);
   };
 
-  const inquire = async (e) => {
-    setIsSending(true)
-    e.preventDefault();
-
-    if (!personName || !personLastName || !personEmail || !personMessage) {
-      setIsSending(false);
-      return;
-    }
-
-    if (inquired) {
-      setIsSending(false);
-      setMessageSent('You are already on our mailing list :)');
-      return;
-    }
+  const inquire = (submitEvent) => {
+    submitEvent.preventDefault();
 
     try {
-      const mailerSend = new MailerSend({
-        apiKey: process.env.MAILERSEND_API_KEY ?? '',
-      });
-      const recipients = [
-        new Recipient('jormceachern@gmail.com', 'atlanticmartialarts@hotmail.com')
-      ];
-      const sentFrom = new Sender(personEmail, `${personName} ${personLastName}`);
-      const emailParams = new EmailParams()
-        .setFrom(sentFrom)
-        .setTo(recipients)
-        .setReplyTo(sentFrom)
-        .setSubject(`atlanticmartialarts.ca student inquiry from ${personName} ${personLastName}`)
-        .setText(personMessage);
-
-      await mailerSend.email.send(emailParams);
-      setIsSending(false);
-      setInputError(false);
-      setMessageSent('Thank you, your inquiry has been submitted.');
-      setPersonHasInquired();
+      handleSubmit(submitEvent);
+      cachePersonHasInquired();
     } catch (err) {
-      setIsSending(false);
       handleError(err);
     }
   };
 
+  if (formState.errors && !inputError) {
+    handleError(formState.errors);
+  }
+
+  if (formState.succeeded && !messageSent) {
+    setMessageSent('Thank you, your inquiry has been submitted.');
+  }
+
   return (
     <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
-      <form ref={formRef} onSubmit={inquire} className='bg-black/40 text-white flex flex-col p-4 items-center rounded-md'>
+      <form onSubmit={inquire} className='bg-black/40 text-white flex flex-col p-4 items-center rounded-md'>
         <h2 className='text-sm sm:text-md md:text-base mb-4 underline'>STUDENT INQUIRY</h2>
         <div className='mb-4 grid grid-cols-1 md:gap-4 md:grid-cols-2'>
           <div className='flex flex-col col-start-1 col-end-2'>
@@ -111,9 +63,7 @@ export const EmailQuestionaire = () => {
               className='px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
               type='text'
               placeholder='first name'
-              name='personName'
-              value={personName}
-              onChange={updateValue}
+              name='First name:' // Text that is displayed as header in sent email
               minLength={3}
               required
             />
@@ -121,9 +71,7 @@ export const EmailQuestionaire = () => {
               className='px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
               type='text'
               placeholder='last name'
-              name='personLastName'
-              value={personLastName}
-              onChange={updateValue}
+              name='Last name:' // Text that is displayed as header in sent email
               minLength={3}
               required
             />
@@ -132,9 +80,7 @@ export const EmailQuestionaire = () => {
                 className='w-full px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
                 type='email'
                 placeholder='your email'
-                name='personEmail'
-                value={personEmail}
-                onChange={updateValue}
+                name='Email address:' // Text that is displayed as header in sent email
                 minLength={9}
                 required
               />
@@ -149,9 +95,7 @@ export const EmailQuestionaire = () => {
               id='email_message'
               className='flex flex-grow min-h-[120px] px-8 py-2 rounded bg-black/30 placeholder-white resize-none text-sm md:text-md'
               placeholder='enter your message'
-              name='personMessage'
-              value={personMessage}
-              onChange={updateValue}
+              name='Message:' // Text that is displayed as header in sent email
               minLength={9}
               maxLength={500}
               required
@@ -171,9 +115,9 @@ export const EmailQuestionaire = () => {
             className='flex items-center'
             type='submit'
             value='subscribe'
-            disabled={isDisabled || inquired}
+            disabled={isDisabled || inquired || formState.submitting}
           >
-            {isSending && (<div className='h-4 w-4 mr-4'><LoadingSpinner /></div>)}Submit
+            {formState.submitting && (<div className='h-4 w-4 mr-4'><LoadingSpinner /></div>)}Submit
           </Button>
         </div>
       </form>
