@@ -17,7 +17,7 @@ const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
       aria-label='class schedule'
       className={`flex flex-col bg-black/50 w-full p-4 ${isBannerWidth ? 'md:w-4/5 lg:w-3/4 xl:w-1/2 mx-16 sm:mx-0 rounded-none md:rounded-lg' : 'h-full pt-auto rounded-lg'} items-start text-white`}
     >
-      <h2 className='text-sm uppercase sm:text-md md:text-base w-full flex justify-center underline mb-1'>SCHEDULE</h2>
+      <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline mb-1'>SCHEDULE</h2>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         TAE KWON DO <div className='ml-8 flex grow justify-end text-end'>Mon/Wed/Fri: Kids (ages 5-12) 6-7pm / Adults 7:15-8:15pm</div>
       </li>

@@ -6,7 +6,7 @@ To begin, in the root directory:
 
 - Install node_modules by running "npm install".
 - Run "npm run build-tw" to build tailwind styles.
-- Run locally by with "npm run dev".
+- Run locally by with "npm run dev". * You may need to manually copy over the global.css file from the repo, in master's public directory.
 
 To deploy to production:
 

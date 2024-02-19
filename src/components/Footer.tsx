@@ -14,7 +14,7 @@ export const Footer = () => (
       <div className='flex mb-1 flex-col items-center text-center text-white text-sm sm:text-base max-w-3xl whitespace-nowrap'>
         General Inquiries
         <div className='flex flex-col justify-center'>
-          <a className='px-2 my-1 flex justify-center text-white text-xs sm:text-sm underline hover:no-underline hover:bg-white/20' href='mailto:maritimemartialarts@hotmail.com' target='_top'>
+          <a className='px-2 my-1 flex justify-center text-white text-xs sm:text-sm underline hover:no-underline hover:bg-white/20' href='mailto:atlanticmartialarts@hotmail.com' target='_top'>
             Email Us
           </a>
           <a className='px-2 flex justify-center text-white text-xs sm:text-sm underline hover:no-underline hover:bg-white/20' href="tel:506-440-3883">
