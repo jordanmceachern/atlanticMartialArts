@@ -1158,6 +1158,10 @@ video {
   max-height: 48px;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -1180,6 +1184,10 @@ video {
 
 .min-h-\[48px\] {
   min-height: 48px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-0 {
@@ -2385,8 +2393,8 @@ video {
   --tw-gradient-to: #26a69a var(--tw-gradient-to-position);
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-clip-border {
@@ -2398,8 +2406,8 @@ video {
           background-clip: text;
 }
 
-.bg-repeat {
-  background-repeat: repeat;
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -5457,14 +5465,6 @@ body {
 
   .sm\:bg-transparent {
     background-color: transparent;
-  }
-
-  .sm\:bg-cover {
-    background-size: cover;
-  }
-
-  .sm\:bg-no-repeat {
-    background-repeat: no-repeat;
   }
 
   .sm\:px-2 {
