@@ -12,17 +12,16 @@ body {
 }
 
 .scroll-vertical::-webkit-scrollbar,
+.murray-content::-webkit-scrollbar,
+.fitness-centre::-webkit-scrollbar,
 .main-content::-webkit-scrollbar {
   width: 0.5rem;
-}
-
-.murray-content::-webkit-scrollbar {
-  width: 0;
 }
 
 /* Track */
 .scroll-vertical::-webkit-scrollbar-track,
 .murray-content::-webkit-scrollbar-track,
+.fitness-centre::-webkit-scrollbar-track,
 .main-content::-webkit-scrollbar-track {
   background: #000;
 }
@@ -30,6 +29,7 @@ body {
 /* Handle */
 .scroll-vertical::-webkit-scrollbar-thumb,
 .murray-content::-webkit-scrollbar-thumb,
+.fitness-centre::-webkit-scrollbar-thumb,
 .main-content::-webkit-scrollbar-thumb {
   background: #fff;
 }
@@ -43,7 +43,7 @@ body {
   transition-property: margin-top, opacity;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
-  margin-top: -183px;
+  margin-top: -212px;
 }
 
 .view-more {

@@ -9,7 +9,11 @@ import MRoss from './MRoss';
 export const HapkidoMasters = () => (
   <div
     aria-label='founders of hap ki do'
-    className='rounded-lg bg-black/50 text-white flex flex-col items-center h-full w-full'
+    className='rounded-lg text-white flex flex-col items-center h-full w-full bg-cover bg-no-repeat'
+    style={{
+      backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701109336/IMG_5006_cji4ve.jpg)',
+      backgroundPosition: 'top center'
+    }}
   >
     <h2 className='text-md md:text-base w-full flex justify-center underline my-4'>Founders</h2>
     <div className='hidden sm:flex flex-nowrap px-2'>
@@ -18,7 +22,7 @@ export const HapkidoMasters = () => (
       <GmMurray />
       <MRoss />
     </div>
-    <Carousel className='flex grow flex-nowrap visible sm:hidden'>
+    <Carousel placeholder={LoadingSpinner} className='flex grow flex-nowrap visible sm:hidden'>
       {/* Item 1 */}
       <GmChoi />
       {/* Item 2 */}
