@@ -19,10 +19,10 @@ const Pricing = ({ isBannerWidth }: PricingProps) => (
     >
       <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline mb-1'>PRICING</h2>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        FIRST MONTH OF TRAINING<div className='ml-8 flex grow justify-end text-end'>Half Price, reg. $92 /month, now $46</div>
+        FIRST WEEK OF TRAINING<div className='ml-8 flex grow justify-end text-end'>FREE</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        <div className='ml-8 flex grow justify-end text-end'>(new members only - until Jan. 31st, 2024)</div>
+        FIRST MONTH OF TRAINING<div className='ml-8 flex grow justify-end text-end'>50% off</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         FIRST ART <div className='ml-8 flex grow justify-end text-end'>$92 /month</div>

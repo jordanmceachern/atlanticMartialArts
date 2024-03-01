@@ -3,9 +3,10 @@ import { LoadingSpinner } from './LoadingSpinner';
 import Banner from '../components/Banner';
 import { Link } from 'gatsby';
 
-export const MoreInformation = () => (
+export const MoreInformation = ({ className } : { className?: string }) => (
   <Banner
-    backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696238449/smackysmacky_ceo3ob.jpg'
+    className={className ? className : undefined}
+    backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709321533/fishbowl_mxaxrx.jpg'
     backgroundPosition='center'>
     <div
       aria-label='more information'
@@ -28,9 +29,9 @@ export const MoreInformation = () => (
   </Banner>
 )
 
-const LazyMoreInformation = () => (
+const LazyMoreInformation = ({ className } : { className?: string }) => (
   <Suspense fallback={<LoadingSpinner />}>
-    <MoreInformation />
+    <MoreInformation className={className} />
   </Suspense>
 )
 

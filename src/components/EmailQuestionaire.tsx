@@ -5,7 +5,7 @@ import { LoadingSpinner } from './LoadingSpinner'
 import { useForm } from '@formspree/react';
 
 export const EmailQuestionaire = () => {
-  const [inputError, setInputError] = useState(false);
+  const [inputError, setInputError] = useState<string | boolean>(false);
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [inquired, setInquired] = useState(false);
@@ -29,9 +29,15 @@ export const EmailQuestionaire = () => {
   }
 
   const handleError = (err) => {
-    console.error(err);
-    setInputError(err);
     setIsDisabled(true);
+    console.error(err);
+    const formErrors = err?.formErrors.map(({ message }) => message).join('. ');
+
+    if (!err?.formErrors) {
+      setInputError(err);
+    } else {
+      setInputError(formErrors);
+    }
   };
 
   const inquire = (submitEvent) => {
@@ -54,7 +60,7 @@ export const EmailQuestionaire = () => {
   }
 
   return (
-    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1708112816/423903878_1315851262413930_6547102846014955944_n_vnpisa.jpg'>
+    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/pushups_wflq0c.jpg'>
       <form onSubmit={inquire} className='bg-black/40 text-white flex flex-col p-4 items-center rounded-md'>
         <h2 className='text-sm sm:text-md md:text-base mb-4 underline'>STUDENT INQUIRY</h2>
         <div className='mb-4 grid grid-cols-1 md:gap-4 md:grid-cols-2'>
@@ -73,6 +79,14 @@ export const EmailQuestionaire = () => {
               placeholder='last name'
               name='Last name:' // Text that is displayed as header in sent email
               minLength={3}
+              required
+            />
+            <input
+              className='px-8 py-2 mb-2 rounded bg-black/30 placeholder-white text-sm md:text-md'
+              type='tel'
+              placeholder='phone number'
+              name='Phone number:' // Text that is displayed as header in sent email
+              minLength={10}
               required
             />
             <div className='flex flex-col items-center w-full'>

@@ -31,7 +31,7 @@ const Information = ({ location }) => {
                 ~
               </p>
               <p className='text-xs sm:text-sm md:text-md w-full flex flex-nowrap'>
-                As a member of the Atlantic Martial Art Academy, I promise to obey the rules and regulations of this academy at all times.
+                As a member of the Atlantic Martial Arts Academy, I promise to obey the rules and regulations of this academy at all times.
               </p>
               <p className='text-xs sm:text-sm md:text-md w-full flex flex-nowrap'>
                 I promise to treat each person with dignity and respect.
