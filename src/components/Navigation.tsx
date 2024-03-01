@@ -10,6 +10,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
 
   switch (currentRoutename) {
     case '': routeName = 'home page'; break;
+    case 'fitnesscentre': routeName = 'fitness centre'; break;
     case 'grandmastermurray': routeName = 'grand master murray'; break;
     case 'taekwondo': routeName = 'tae kwon do'; break;
     case 'hapkido': routeName = 'hap ki do'; break;
@@ -47,7 +48,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
           <div className='absolute mt-px sm:mt-0 bg-white sm:bg-transparent sm:static z-10 grow flex-col sm:z-0 sm:flex sm:flex-row flex-nowrap sm:justify-evenly md:justify-between w-full'>
             <Link
               to='/'
-              className={`${currentRoutename === '' ? 'bg-blue/40 ' : ''} px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+              className={`${currentRoutename === '' ? 'bg-blue/40 ' : ''} px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               <div
                 aria-label='logo'
@@ -63,25 +64,31 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
             </Link>
             <Link
               to='/information'
-              className={`${currentRoutename === 'information' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+              className={`${currentRoutename === 'information' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               INFORMATION
             </Link>
             <Link
+              to='/fitnesscentre'
+              className={`${currentRoutename === 'fitnesscentre' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+            >
+              FITNESS CENTRE
+            </Link>
+            <Link
               to='/hapkido'
-              className={`${currentRoutename === 'hapkido' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+              className={`${currentRoutename === 'hapkido' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               HAP KI DO
             </Link>
             <Link
               to='/taekwondo'
-              className={`${currentRoutename === 'taekwondo' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+              className={`${currentRoutename === 'taekwondo' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               TAE KWON DO
             </Link>
             <Link
               to='/kickboxing'
-              className={`${currentRoutename === 'kickboxing' ? 'bg-blue/40 ' : ''}px-2 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+              className={`${currentRoutename === 'kickboxing' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               KICK-BOXING
             </Link>
