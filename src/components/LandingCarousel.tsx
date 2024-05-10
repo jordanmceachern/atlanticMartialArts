@@ -17,7 +17,7 @@ const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
     >
       <iframe
         className='h-full w-full'
-        src='https://www.youtube.com/embed/2-7th58SSNA?si=s0OfLA37DSVi4xXZ&autoplay=1&mute=1&playlist=2-7th58SSNA'
+        src='https://www.youtube.com/embed/DuGxBzcL2Us?si=rdGDWuwjKUBs-bG-&autoplay=1&mute=1&playlist=2-7th58SSNA'
         title='Master Ross brick breaking'
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       >
@@ -25,31 +25,23 @@ const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
     </div>
     {/* Item 2 */}
     <div
-      aria-label='Mr.Bowstick breaks boards for his black belt testing using an axe kick followed by a roundhouse'
+      aria-label='Photo of Joseph McShane and Jordan McEachern demonstrating the orange belt form'
       className='ease-in-out h-full w-full'
+      style={{
+        background:
+          'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1715364249/IMG_5526_sdxba4.jpg)',
+      }}
     >
-      <iframe
-        className='h-full w-full'
-        src='https://www.youtube.com/embed/gnMrvRUGmeE?si=aAtylkI72bPOSF3p&mute=1&playlist=gnMrvRUGmeE'
-        title='Mr.Bowstick board breaking'
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      >
-      </iframe>
+      <div className='inset-0 h-full w-full flex items-end justify-center'>
+        <div className='bg-black/50 mx-2 mb-16 px-3 py-2 rounded-lg text-white text-center'>
+          Checkout out more of our videos at:
+          <a className='mt-1 flex justify-center hover:bg-white/50 rounded' href='https://www.youtube.com/@AtlanticMartialArtsAcademy' target='_blank' rel='noopener noreferrer'>
+            <img src='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893537/qwinn/youtube_wkykc9.png' alt='link to AMAA YouTube channel' />
+          </a>
+        </div>
+      </div>
     </div>
     {/* Item 3 */}
-    <div
-      aria-label='Master Ross and Mr.Bostick demonstrate the black belt 3-step pattern'
-      className='ease-in-out h-full w-full'
-    >
-      <iframe
-        className='h-full w-full'
-        src='https://www.youtube.com/embed/xICeEoYxbjc?si=k7phCyqKiPusdpGZ&mute=1&playlist=xICeEoYxbjc'
-        title='Master Ross and Mr.Bostick demonstrate the black belt 3-step'
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      >
-      </iframe>
-    </div>
-    {/* Item 4 */}
     <div
       aria-label='Photo of Master Denis, Mr.Bowstick, Master Ross, and Mr.Gilbert'
       className='ease-in-out h-full w-full'
