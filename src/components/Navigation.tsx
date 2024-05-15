@@ -92,6 +92,15 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
             >
               KICK-BOXING
             </Link>
+            <a
+              aria-label='link to AMAA YouTube channel'
+              className='px-2 w-full sm:w-auto border-black  border-b sm:border-0 flex justify-center items-center active:bg-slate/30 hover:bg-slate/20 dark:hover:bg-white/20'
+              href='https://www.youtube.com/channel/UCc3Hz0Cq82ifmjo8W5T1RfA'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1675893537/qwinn/youtube_wkykc9.png' alt='link to AMAA YouTube channel' />
+            </a>
           </div>
         </div>
       </nav>

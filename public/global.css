@@ -3341,7 +3341,7 @@ body {
   transition-property: margin-top, opacity;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
-  margin-top: -212px;
+  margin-top: -262px;
 }
 
 .view-more {
@@ -4235,6 +4235,10 @@ body {
   background-color: rgb(156 39 176 / 0.1);
 }
 
+.hover\:bg-slate\/20:hover {
+  background-color: rgb(51 51 51 / 0.2);
+}
+
 .hover\:bg-teal-500\/10:hover {
   background-color: rgb(0 150 136 / 0.1);
 }
@@ -4249,6 +4253,10 @@ body {
 
 .hover\:bg-white\/20:hover {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:bg-white\/50:hover {
+  background-color: rgb(255 255 255 / 0.5);
 }
 
 .hover\:bg-opacity-80:hover {
@@ -4644,6 +4652,10 @@ body {
 
 .active\:bg-purple-500\/30:active {
   background-color: rgb(156 39 176 / 0.3);
+}
+
+.active\:bg-slate\/30:active {
+  background-color: rgb(51 51 51 / 0.3);
 }
 
 .active\:bg-teal-500\/30:active {
@@ -5358,6 +5370,10 @@ body {
   color: rgb(96 125 139 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:hover\:bg-white\/20:hover) {
+  background-color: rgb(255 255 255 / 0.2);
+}
+
 @media (min-width: 540px) {
   .sm\:static {
     position: static;
@@ -5775,6 +5791,10 @@ body {
 @media (min-width: 1140px) {
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 }
 
