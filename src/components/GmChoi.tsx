@@ -2,7 +2,7 @@ import React from 'react';
 
 const GmChoiName = 'Grand Master Choi Yung Sool';
 
-const GmChoi = () => (
+export const GmChoi = () => (
   <div className='ease-in-out w-full flex flex-col items-center sm:w-1/4'>
     <div className='w-full px-4 sm:px-2 flex'>
       <div className='flex grow rounded-lg bg-white/50 p-2 mb-2'>

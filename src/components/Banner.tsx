@@ -1,7 +1,6 @@
-import React, { Suspense, ReactNode } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React, { ReactNode } from 'react';
 
-type BannerProps = {
+export type BannerProps = {
   backgroundImage?: string;
   backgroundPosition?: string;
   children?: ReactNode;
@@ -29,10 +28,4 @@ export const Banner = ({
   )
 }
 
-const LazyBanner = (props?: BannerProps) => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <Banner {...props} />
-  </Suspense>
-)
-
-export default LazyBanner
+export default Banner

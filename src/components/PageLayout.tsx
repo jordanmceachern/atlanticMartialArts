@@ -4,12 +4,12 @@ import Navigation from './Navigation';
 import MetaData from './MetaData';
 import Footer from './Footer'
 
-type PageLayoutProps = {
+export type PageLayoutProps = {
   children: ReactNode;
   currentPathname: string;
 }
 
-const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
+export const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
   const currentRoutename = currentPathname.slice(1, currentPathname.length - 1); // to remove the "/" before every route name.
   return (
     <ErrorBoundary>

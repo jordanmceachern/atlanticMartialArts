@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 import Banner from '../components/Banner';
 import { Link } from 'gatsby';
 
@@ -29,10 +28,4 @@ export const MoreInformation = ({ className } : { className?: string }) => (
   </Banner>
 )
 
-const LazyMoreInformation = ({ className } : { className?: string }) => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <MoreInformation className={className} />
-  </Suspense>
-)
-
-export default LazyMoreInformation
+export default MoreInformation

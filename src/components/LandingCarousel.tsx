@@ -1,8 +1,8 @@
-import React, { useState, Suspense } from 'react';
+import React, { useState } from 'react';
 import { Button, Carousel as MtwCarousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 
-const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
+export const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
   <MtwCarousel
     autoplay={autoPlay}
     autoplayDelay={3500}
@@ -59,7 +59,7 @@ const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
   </MtwCarousel>
 )
 
-export const LazyLandingCarousel = () => {
+export const LandingCarousel = () => {
   const [autoPlay, setAutoPlay] = useState(true);
 
   const toggleAutoPlay = () => setAutoPlay(autoplay => !autoplay);
@@ -68,14 +68,13 @@ export const LazyLandingCarousel = () => {
   return (
     <>
       <div className='flex flex-col items-center h-80 sm:h-96 w-full'>
-        <Suspense fallback={<LoadingSpinner />}>
           <LandingCarouselComp autoPlay={autoPlay} />
-        </Suspense>
       </div>
       <Button
         aria-label='toggle carousel auto-play'
         className='mt-4'
         onClick={toggleAutoPlay}
+        placeholder={buttonText}
       >
         {buttonText}
       </Button>
@@ -83,4 +82,4 @@ export const LazyLandingCarousel = () => {
   )
 };
 
-export default LazyLandingCarousel;
+export default LandingCarousel;

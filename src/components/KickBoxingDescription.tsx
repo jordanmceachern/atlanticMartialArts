@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 
 export const KickBoxingDescription = () => (
   <div
@@ -29,12 +28,6 @@ export const KickBoxingDescription = () => (
       </p>
     </div>
   </div>
-)
+);
 
-const LazyKickBoxingDescription = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <KickBoxingDescription />
-  </Suspense>
-)
-
-export default LazyKickBoxingDescription
+export default KickBoxingDescription

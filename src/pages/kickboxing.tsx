@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import KickBoxingDescription from '../components/KickBoxingDescription';
 import MoreInformation from '../components/MoreInformation';
 
-const Kickboxing = ({ location }) => {
+export const Kickboxing = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex grow items-start justify-center'>

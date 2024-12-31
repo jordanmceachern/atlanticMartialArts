@@ -127,6 +127,7 @@ export const EmailQuestionaire = () => {
           }
           <Button
             className='flex items-center'
+            placeholder='subscribe'
             type='submit'
             value='subscribe'
             disabled={isDisabled || inquired || formState.submitting}

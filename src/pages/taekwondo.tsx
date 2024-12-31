@@ -8,7 +8,7 @@ import MoreInformation from '../components/MoreInformation';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { Carousel } from '@material-tailwind/react';
 
-const Taekwondo = ({ location }) => {
+export const Taekwondo = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>

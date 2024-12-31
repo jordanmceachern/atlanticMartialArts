@@ -1,11 +1,10 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 
-type PricingProps = {
+export type PricingProps = {
   isBannerWidth?: boolean
 }
 
-const Pricing = ({ isBannerWidth }: PricingProps) => (
+export const Pricing = ({ isBannerWidth }: PricingProps) => (
   <div
     className='flex grow items-center justify-center rounded-lg'
     style={{
@@ -76,9 +75,4 @@ const Pricing = ({ isBannerWidth }: PricingProps) => (
   </div>
 )
 
-const PricingLazy = (props?: PricingProps) => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <Pricing {...props} />
-  </Suspense>
-)
-export default PricingLazy;
+export default Pricing;
