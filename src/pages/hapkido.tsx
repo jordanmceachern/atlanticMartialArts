@@ -21,7 +21,7 @@ export const Hapkido = ({ location }) => {
             placeholder={LoadingSpinner}
           >
             {/* Item 1 */}
-            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709316030/cktaehighkick_shdqwh.jpg' className='h-full'>
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709316030/cktaehighkick_shdqwh.jpg'>
               <div className='flex flex-col justify-between h-full bg-black/40 w-full px-4 py-4 rounded-lg text-white'>
                 <h1 className='text-sm sm:text-md md:text-base w-full flex self-center items-center justify-center uppercase md:mt-10'>Home of the Canadian HapKiDo Association</h1>
                 <div
