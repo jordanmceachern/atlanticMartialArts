@@ -1,6 +1,6 @@
 import React, { useRef, ReactNode } from 'react'
 
-type ViewMoreLessProps = {
+export type ViewMoreLessProps = {
   children: ReactNode;
   index: number;
   title?: string;

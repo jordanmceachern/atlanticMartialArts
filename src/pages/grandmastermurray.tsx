@@ -1,7 +1,7 @@
 import React from 'react';
 import PageLayout from '../components/PageLayout';
 
-const App = ({ location }) => {
+export const GrandMasterMurray = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
@@ -80,4 +80,4 @@ const App = ({ location }) => {
   )
 };
 
-export default App;
+export default GrandMasterMurray;

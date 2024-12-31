@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Carousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 import GmChoi from './GmChoi';
@@ -35,10 +35,4 @@ export const HapkidoMasters = () => (
   </div>
 )
 
-const LazyHapkidoMasters = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <HapkidoMasters />
-  </Suspense>
-)
-
-export default LazyHapkidoMasters
+export default HapkidoMasters

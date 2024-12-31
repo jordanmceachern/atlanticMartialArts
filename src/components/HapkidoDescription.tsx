@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 
 export const HapkidoDescription = () => (
   <div
@@ -30,10 +29,4 @@ export const HapkidoDescription = () => (
   </div>
 )
 
-const LazyHapkidoDescription = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <HapkidoDescription />
-  </Suspense>
-)
-
-export default LazyHapkidoDescription
+export default HapkidoDescription

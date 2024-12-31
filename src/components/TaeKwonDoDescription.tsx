@@ -1,5 +1,4 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 import ViewMoreLess from './ViewMoreLess';
 
 export const TaeKwonDoDescription = () => (
@@ -43,10 +42,4 @@ export const TaeKwonDoDescription = () => (
   </div>
 )
 
-const LazyTaeKwonDoDescription = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <TaeKwonDoDescription />
-  </Suspense>
-)
-
-export default LazyTaeKwonDoDescription
+export default TaeKwonDoDescription

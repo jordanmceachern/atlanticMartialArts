@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Carousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 import GenChoi from './GenChoi';
@@ -35,10 +35,4 @@ export const TaeKwonDoMasters = () => (
   </div>
 )
 
-const LazyTaeKwonDoMasters = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <TaeKwonDoMasters />
-  </Suspense>
-)
-
-export default LazyTaeKwonDoMasters
+export default TaeKwonDoMasters

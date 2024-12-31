@@ -3,7 +3,7 @@ import PageLayout from '../components/PageLayout';
 import Banner from '../components/Banner';
 import MoreInformation from '../components/MoreInformation';
 
-const App = ({ location }) => {
+export const FitnessCentre = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='fitness-centre flex flex-col px-4 sm:px-6 md:px-10 grow self-center items-center justify-start w-full md:min-w-[600px] max-w-[1040px]'>
@@ -21,4 +21,4 @@ const App = ({ location }) => {
   )
 };
 
-export default App;
+export default FitnessCentre;

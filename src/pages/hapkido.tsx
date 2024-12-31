@@ -8,7 +8,7 @@ import HapkidoMasters from '../components/HapkidoMasters';
 import MoreInformation from '../components/MoreInformation';
 import LoadingSpinner from '../components/LoadingSpinner';
 
-const Hapkido = ({ location }) => {
+export const Hapkido = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>

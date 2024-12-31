@@ -1,11 +1,10 @@
-import React, { Suspense } from 'react';
-import { LoadingSpinner } from './LoadingSpinner';
+import React from 'react';
 
-type ScheduleTimesProps = {
+export type ScheduleTimesProps = {
   isBannerWidth?: boolean
 }
 
-const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
+export const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
   <div
     className={`flex flex-col h-full grow items-center justify-center rounded-lg`}
     style={{
@@ -40,13 +39,7 @@ const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
   </div>
 )
 
-export const ScheduleTimesLazy = (props?: ScheduleTimesProps) => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <ScheduleTimes {...props} />
-  </Suspense>
-)
-
-const ScheduleContent = () => (
+export const ScheduleContent = () => (
   <div className='h-72 sm:h-96 bg-black rounded-lg flex justify-center w-full my-4 sm:my-16'>
     <div className='flex h-full w-full sm:w-3/4'>
       <ScheduleTimes isBannerWidth />
@@ -54,10 +47,4 @@ const ScheduleContent = () => (
   </div>
 );
 
-export const ScheduleContentLazy = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <ScheduleContent />
-  </Suspense>
-)
-
-export default ScheduleContentLazy;
+export default ScheduleContent;

@@ -4,7 +4,7 @@ import LandingCarousel from '../components/LandingCarousel';
 import Schedule from '../components/Schedule';
 import EmailQuestionaire from '../components/EmailQuestionaire';
 
-const App = ({ location }) => {
+export const App = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col items-center w-full'>
