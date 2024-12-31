@@ -3,14 +3,14 @@ import PageLayout from '../components/PageLayout';
 import { ScheduleTimes } from '../components/Schedule';
 import Pricing from '../components/Pricing';
 import Banner from '../components/Banner';
-import EmailQuestionaire from '../components/EmailQuestionaire';
+import EmailQuestionnaire from '../components/EmailQuestionnaire';
 
 export const Information = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
-          <EmailQuestionaire />
+          <EmailQuestionnaire />
           <div className='relative col-start-1 col-end-2 rounded-lg'>
             <ScheduleTimes />
           </div>

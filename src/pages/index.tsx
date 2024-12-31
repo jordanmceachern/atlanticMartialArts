@@ -2,7 +2,7 @@ import React from 'react';
 import PageLayout from '../components/PageLayout';
 import LandingCarousel from '../components/LandingCarousel';
 import Schedule from '../components/Schedule';
-import EmailQuestionaire from '../components/EmailQuestionaire';
+import EmailQuestionnaire from '../components/EmailQuestionnaire';
 
 export const App = ({ location }) => {
   return (
@@ -14,7 +14,7 @@ export const App = ({ location }) => {
           </h1>
           <LandingCarousel />
           <div className='mt-4 sm:mt-10 w-full'>
-            <EmailQuestionaire />
+            <EmailQuestionnaire />
           </div>
           <div className='flex justify-center w-full rounded-lg'>
             <Schedule />

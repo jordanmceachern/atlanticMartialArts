@@ -18,12 +18,6 @@ export const Pricing = ({ isBannerWidth }: PricingProps) => (
     >
       <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline mb-1'>PRICING</h2>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        FIRST WEEK OF TRAINING<div className='ml-8 flex grow justify-end text-end'>FREE</div>
-      </li>
-      <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        FIRST MONTH OF TRAINING<div className='ml-8 flex grow justify-end text-end'>50% off</div>
-      </li>
-      <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         FIRST ART <div className='ml-8 flex grow justify-end text-end'>$92 /month</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
@@ -38,9 +32,9 @@ export const Pricing = ({ isBannerWidth }: PricingProps) => (
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         <div className='ml-8 flex grow justify-end text-end'>$280 for October 7, 2023 - June 30, 2024</div>
       </li>
-      <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
+      {/* <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         WEAPONS<div className='ml-8 flex grow justify-end text-end'>$15 /class or $40 /month</div>
-      </li>
+      </li> */}
       <li className='my-1 text-xs sm:text-sm md:text-md w-full justify-start flex flex-nowrap'>
         Family Discount
       </li>
