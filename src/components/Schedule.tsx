@@ -24,17 +24,17 @@ export const ScheduleTimes = ({ isBannerWidth }: ScheduleTimesProps) => (
         TAE KWON DO <div className='whitespace-normal ml-8 flex grow justify-end text-end'>Mon/Wed/Fri: Kids (ages 5-12) 6:15-7:15pm / Adults 7:30-8:30pm</div>
       </li>
       <li className='whitespace-nowrap text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        KICK BOXING <div className='ml-8 flex whitespace-normal grow justify-end text-end'>Adults Mon/Wed/Fri 5:00-6:00pm / Oct.3 Kids (age 10+) Th 5:00-6:00pm</div>
+        KICK BOXING <div className='ml-8 flex whitespace-normal grow justify-end text-end'>Adults Mon/Wed/Fri 5:00-6:00pm / Oct.3 Kids (ages 8-12) Th 5:00-6:00pm</div>
       </li>
       <li className='whitespace-nowrap text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        TODDLER'S CLASS <div className='whitespace-normal ml-8 flex grow justify-end text-end'>Sat: (beginner) 9:30am-10:30am / (advanced) 11:00am-12:00pm</div>
+        TODDLER'S CLASS <div className='whitespace-normal ml-8 flex grow justify-end text-end'>Sat 11:00am-12:00pm</div>
       </li>
-      <li className='whitespace-nowrap text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
+      {/* <li className='whitespace-nowrap text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
         WEAPONS TRAINING <div className='whitespace-normal ml-8 flex grow justify-end text-end'>Sat: 12:30pm-1:30pm*</div>
       </li>
       <li className='mt-1 text-xs sm:text-sm md:text-md w-full justify-end flex flex-nowrap'>
         [subject to change]*
-      </li>
+      </li> */}
     </ul>
   </div>
 )

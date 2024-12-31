@@ -4,7 +4,7 @@ import { Banner } from './Banner'
 import { LoadingSpinner } from './LoadingSpinner'
 import { useForm } from '@formspree/react';
 
-export const EmailQuestionaire = () => {
+export const EmailQuestionnaire = () => {
   const [inputError, setInputError] = useState<string | boolean>(false);
   const [messageSent, setMessageSent] = useState<string | boolean>(false);
   const [isDisabled, setIsDisabled] = useState(false);
@@ -140,4 +140,4 @@ export const EmailQuestionaire = () => {
   )
 }
 
-export default EmailQuestionaire
+export default EmailQuestionnaire

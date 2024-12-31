@@ -13,7 +13,7 @@ export const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
   const currentRoutename = currentPathname.slice(1, currentPathname.length - 1); // to remove the "/" before every route name.
   return (
     <ErrorBoundary>
-      <div className='relative flex flex-col h-fit min-h-screen'>
+      <div className='relative flex flex-col h-fit min-h-screen dark:bg-slate dark:text-white'>
         <MetaData />
         <Navigation currentRoutename={currentRoutename} />
         <div

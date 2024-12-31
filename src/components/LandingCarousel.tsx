@@ -25,6 +25,14 @@ export const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
     </div>
     {/* Item 2 */}
     <div
+      aria-label='Photo of all Academy Instructors and Students'
+      className='ease-in-out h-full w-full'
+      style={{
+        background:
+          'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/amaa_students_c705i7.jpg)',
+      }}
+    />
+    {/* <div
       aria-label='Photo of Joseph McShane and Jordan McEachern demonstrating the orange belt form'
       className='ease-in-out h-full w-full'
       style={{
@@ -40,10 +48,38 @@ export const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
           </a>
         </div>
       </div>
-    </div>
+    </div> */}
     {/* Item 3 */}
+    <div className='ease-in-out h-full w-full'>
+      <label className='hidden' id='ladiesselfdefense' aria-hidden>
+        Saturday January 25 and February 22, 12:30pm to 2pm ladies self defense winter sessions. Storm dates are February 1 and March 1. Limited space available. Cost is $60, with $10 off if you register before January 10.
+      </label>
+      <div
+        aria-describedby='ladiesselfdefense'
+        className='h-full mx-auto'
+        style={{
+          background:
+            'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/ladies_self-defense_xg1opo.jpg)',
+        }}
+      />
+    </div>
+    {/* Item 4 */}
+    <div className='ease-in-out h-full w-full'>
+      <label className='hidden' id='teenkickboxing' aria-hidden>
+        Thursdays 5-6pm, pre-teen kick-boxing for ages 8 to 12 years old. Monthly cost is $50 with the family rate available.
+      </label>
+      <div
+        aria-describedby='teenkickboxing'
+        className='h-full mx-auto'
+        style={{
+          background:
+            'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/teen_kickboxing_xwla1a.jpg)',
+        }}
+      />
+    </div>
+    {/* Item 5 */}
     <div
-      aria-label='Photo of Master Denis, Mr.Bowstick, Master Ross, and Mr.Gilbert'
+      aria-label='Photo of Master Ludford, Mr.Bostick, Master Ross, and Mr.Gilbert'
       className='ease-in-out h-full w-full'
       style={{
         background:

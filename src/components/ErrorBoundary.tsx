@@ -29,7 +29,7 @@ class ErrorBoundary extends React.Component<ComponentProps, ErrorState> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className='h-screen w-screen flex flex-col items-center justify-center'>
+        <div className='h-screen w-screen flex flex-col items-center justify-center dark:bg-slate dark:text-white'>
           <div
             className='z-0 absolute inset-0 opacity-10'
             style={{

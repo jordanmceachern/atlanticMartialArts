@@ -16,8 +16,8 @@ export const Taekwondo = ({ location }) => {
           <Carousel
             autoplay
             autoplayDelay={5000}
-            loop
             className='h-80 sm:h-96 flex flex-nowrap rounded-lg col-start-1 col-end-2 md:col-end-3'
+            loop
             placeholder={LoadingSpinner}
           >
             {/* Item 1 */}
