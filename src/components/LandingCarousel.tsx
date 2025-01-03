@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Carousel as MtwCarousel } from "@material-tailwind/react";
+import { Button, Carousel } from "@material-tailwind/react";
 import { LoadingSpinner } from './LoadingSpinner';
 
-export const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
-  <MtwCarousel
-    autoplay={autoPlay}
-    autoplayDelay={3500}
-    loop
-    className='relative rounded-lg h-full w-full flex'
-    placeholder={LoadingSpinner}
-  >
+export const LandingCarouselChildren = () => (
+  <>
     {/* Item 1 */}
     <div
       aria-label='Master Ross demonstrates breaking 2 cement stones using the hammer fist technique'
@@ -92,10 +86,10 @@ export const LandingCarouselComp = ({ autoPlay }: { autoPlay?: boolean }) => (
         </div>
       </div> */}
     </div>
-  </MtwCarousel>
+  </>
 )
 
-export const LandingCarousel = () => {
+export const CarouselWrapper = (props) => {
   const [autoPlay, setAutoPlay] = useState(true);
 
   const toggleAutoPlay = () => setAutoPlay(autoplay => !autoplay);
@@ -103,19 +97,35 @@ export const LandingCarousel = () => {
 
   return (
     <>
-      <div className='flex flex-col items-center h-80 sm:h-96 w-full'>
-          <LandingCarouselComp autoPlay={autoPlay} />
+      <div className={`flex flex-col items-center h-80 sm:h-96 w-full ${props.wrapperClassName}`}>
+        <Carousel
+          autoplay={autoPlay}
+          autoplayDelay={3500}
+          loop
+          className={`relative rounded-lg h-full w-full flex ${props.className}`}
+          placeholder={LoadingSpinner}
+        >
+          {props.children}
+        </Carousel>
+        <Button
+          aria-label='toggle carousel auto-play'
+          className='mt-4'
+          onClick={toggleAutoPlay}
+          placeholder={buttonText}
+        >
+          {buttonText}
+        </Button>
       </div>
-      <Button
-        aria-label='toggle carousel auto-play'
-        className='mt-4'
-        onClick={toggleAutoPlay}
-        placeholder={buttonText}
-      >
-        {buttonText}
-      </Button>
     </>
   )
 };
+
+export const LandingCarousel = () => {
+  return (
+    <CarouselWrapper>
+      <LandingCarouselChildren />
+    </CarouselWrapper>
+  )
+}
 
 export default LandingCarousel;
