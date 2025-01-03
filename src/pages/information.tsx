@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import { ScheduleTimes } from '../components/Schedule';
 import Pricing from '../components/Pricing';
 import Banner from '../components/Banner';
+import Location from '../components/Location';
 import EmailQuestionnaire from '../components/EmailQuestionnaire';
 
 export const Information = ({ location }) => {
@@ -57,13 +58,14 @@ export const Information = ({ location }) => {
             backgroundPosition='center'>
             <div
               aria-label='location'
-              className={`flex flex-col bg-black/50 w-full px-4 pt-4 pb-10 md:pb-28 items-start rounded-lg text-white`}
+              className={`flex flex-col bg-black/50 w-full px-4 pt-4 pb-10 items-start rounded-lg text-white`}
             >
               <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline uppercase mb-1'>Location</h2>
               <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-                Atlantic Martial Arts Academy is located in the top floor studio of the Multi-Cultural
+                Atlantic Martial Arts Academy is located in the top floor studio of the Cultural
                 Centre Gym (Old YMCA by exhibition ground), at 28 Saunders Street, Fredericton, New Brunswick.
               </p>
+              <Location />
             </div>
           </Banner>
         </div>

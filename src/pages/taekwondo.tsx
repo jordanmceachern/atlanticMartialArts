@@ -5,23 +5,16 @@ import TaeKwonDoDescription from '../components/TaeKwonDoDescription';
 import TaeKwonDoMasters from '../components/TaeKwonDoMasters';
 import Belts from '../components/Belts';
 import MoreInformation from '../components/MoreInformation';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { Carousel } from '@material-tailwind/react';
+import { CarouselWrapper } from '../components/LandingCarousel';
 
 export const Taekwondo = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
-          <Carousel
-            autoplay
-            autoplayDelay={5000}
-            className='h-80 sm:h-96 flex flex-nowrap rounded-lg col-start-1 col-end-2 md:col-end-3'
-            loop
-            placeholder={LoadingSpinner}
-          >
+          <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3'>
             {/* Item 1 */}
-            <div className='relative col-start-1 col-end-2 md:col-end-3 flex flex-col h-full bg-black/20 w-full px-4 py-4 rounded-lg'>
+            <div className='relative flex flex-col h-full bg-black/20 w-full px-4 py-4 rounded-lg'>
               <div className='absolute inset-0 z-0 grid grid-cols-4'>
                 <div
                   className='hidden md:inline md:col-start-1 md:col-end-2'
@@ -47,7 +40,7 @@ export const Taekwondo = ({ location }) => {
               </div>
               <div
                 aria-label='Atlantic Martial Arts Academy Tae Kwon Do logo'
-                className='z-10 flex self-end h-20 w-20 mt-48 sm:mt-64 rounded-full'
+                className='z-10 flex self-end h-[7.5rem] w-24 mt-36 sm:mt-52 rounded-full'
                 style={{
                   background:
                     'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)'
@@ -60,7 +53,7 @@ export const Taekwondo = ({ location }) => {
             <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/padkicking_rtdiod.jpg' className='h-full' />
             {/* Item 4 */}
             <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314081/mountainclimbers_oudb7c.jpg' className='h-full' />
-          </Carousel>
+          </CarouselWrapper>
           <div className='relative col-start-1 col-end-2 rounded-lg'>
             <TaeKwonDoDescription />
           </div>

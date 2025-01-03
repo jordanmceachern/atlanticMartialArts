@@ -5,13 +5,15 @@ export type BannerProps = {
   backgroundPosition?: string;
   children?: ReactNode;
   className?: string;
+  title?: string;
 }
 
 export const Banner = ({
   backgroundImage,
   backgroundPosition,
   children,
-  className
+  className,
+  title
 }: BannerProps) => {
   return (
     <div
@@ -20,6 +22,7 @@ export const Banner = ({
         background:
           `${backgroundPosition ? backgroundPosition : 'top'} / cover no-repeat ${backgroundImage ? `url(${backgroundImage})` : 'black'}`,
       }}
+      title={title}
     >
       <div className='flex flex-col grow w-full rounded-lg'>
         {children}
