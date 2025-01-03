@@ -10,6 +10,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
 
   switch (currentRoutename) {
     case '': routeName = 'home page'; break;
+    case 'events': routeName = 'events'; break;
     case 'fitnesscentre': routeName = 'fitness centre'; break;
     case 'grandmastermurray': routeName = 'grand master murray'; break;
     case 'taekwondo': routeName = 'tae kwon do'; break;
@@ -43,7 +44,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
           </div>
         </div>
       </div>
-      <nav className='max-w-3xl flex flex-col sm:flex-row w-full' aria-label='main menu'>
+      <nav className='max-w-4xl flex flex-col sm:flex-row w-full' aria-label='main menu'>
         <div className='nav-items relative opacity-0 sm:opacity-100 sm:mt-0 sm:flex sm:grow'>
           <div className='absolute mt-px sm:mt-0 bg-white dark:bg-black sm:bg-transparent sm:static z-10 grow flex-col sm:z-0 sm:flex sm:flex-row flex-nowrap sm:justify-evenly md:justify-between w-full'>
             <Link
@@ -67,6 +68,12 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
               className={`${currentRoutename === 'information' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black dark:active:bg-white/30 dark:hover:bg-white/20 border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
               INFORMATION
+            </Link>
+            <Link
+              to='/events'
+              className={`${currentRoutename === 'events' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black dark:active:bg-white/30 dark:hover:bg-white/20 border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
+            >
+              EVENTS
             </Link>
             <Link
               to='/fitnesscentre'
