@@ -990,6 +990,10 @@ video {
   margin-top: 12rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-px {
   margin-top: 1px;
 }
