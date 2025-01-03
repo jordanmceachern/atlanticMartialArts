@@ -978,6 +978,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1112,6 +1116,10 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .h-\[2px\] {
@@ -5473,6 +5481,10 @@ body {
 
   .sm\:h-96 {
     height: 24rem;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
   }
 
   .sm\:w-1\/4 {
