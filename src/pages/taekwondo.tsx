@@ -12,7 +12,7 @@ export const Taekwondo = ({ location }) => {
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
-          <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3'>
+          <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3 overflow-y-hidden'>
             {/* Item 1 */}
             <div className='relative flex flex-col h-full bg-black/20 w-full px-4 py-4 rounded-lg'>
               <div className='absolute inset-0 z-0 grid grid-cols-4'>

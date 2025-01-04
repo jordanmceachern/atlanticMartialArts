@@ -11,7 +11,7 @@ export const TaeKwonDoMasters = () => (
     aria-label='founders of tae kwon do'
     className='rounded-lg text-white flex flex-col items-center h-full w-full bg-cover bg-no-repeat'
     style={{
-      backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1709316610/choimurray_tj1nqo.jpg)',
+      backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto,o_50,b_rgb:000/v1709316610/choimurray_tj1nqo.jpg)',
       backgroundPosition: 'top center'
     }}
   >

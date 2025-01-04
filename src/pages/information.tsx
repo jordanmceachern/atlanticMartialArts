@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../components/PageLayout';
-import { ScheduleTimes } from '../components/Schedule';
+import Schedule from '../components/Schedule';
 import Pricing from '../components/Pricing';
 import Banner from '../components/Banner';
 import Location from '../components/Location';
@@ -12,17 +12,18 @@ export const Information = ({ location }) => {
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
           <EmailQuestionnaire />
-          <div className='relative col-start-1 col-end-2 rounded-lg'>
-            <ScheduleTimes />
+          <div className='relative rounded-lg col-start-1 col-end-2 md:col-end-3'>
+            <Schedule />
           </div>
-          <div className='relative col-start-1 col-end-2 md:col-start-2 md:col-end-3 rounded-lg'>
-            <Pricing />
-          </div>
-          <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696165783/mastermurray2010_bbrdm5.jpg'>
-            <div
-              aria-label='student oath'
-              className={`flex flex-col bg-black/50 w-full px-4 pt-4 pb-10 md:pb-28 items-start rounded-lg text-white`}
-            >
+          <div
+            aria-label='student oath'
+            className='col-start-1 col-end-2 rounded-lg text-white'
+            style={{
+              background:
+                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto,o_50/v1696165783/mastermurray2010_bbrdm5.jpg)',
+            }}
+          >
+            <div className='flex flex-col items-start bg-black/50 px-4 pt-4 pb-10 md:pb-28 rounded-lg'>
               <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline uppercase mb-1'>Student Oath</h2>
               <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
                 While teaching martial and defense skills, the Atlantic Martial Arts Academy has a student Oath to be taken at the start of
@@ -52,7 +53,10 @@ export const Information = ({ location }) => {
                 a way of self improvement for the student that he or she may have confidence, and help use their skills only for good.
               </p>
             </div>
-          </Banner>
+          </div>
+          <div className='relative col-start-1 col-end-2 md:col-start-2 md:col-end-3 rounded-lg'>
+            <Pricing />
+          </div>
           <Banner
             backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694544887/dojo_vdhf6m.jpg'
             backgroundPosition='center'>

@@ -16,7 +16,7 @@ export const App = ({ location }) => {
           <div className='mt-4 sm:mt-10 w-full'>
             <EmailQuestionnaire />
           </div>
-          <div className='flex justify-center w-full rounded-lg'>
+          <div className='my-4 sm:my-16 w-full'>
             <Schedule />
           </div>
         </div>
