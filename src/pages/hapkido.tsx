@@ -12,7 +12,7 @@ export const Hapkido = ({ location }) => {
     <PageLayout currentPathname={location.pathname}>
       <div className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
-          <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3'>
+          <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3 overflow-y-hidden'>
             {/* Item 1 */}
             <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709316030/cktaehighkick_shdqwh.jpg' className='h-full'>
               <div className='flex flex-col justify-between h-full bg-black/40 w-full px-4 py-4 rounded-lg text-white'>

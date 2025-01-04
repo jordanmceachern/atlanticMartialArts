@@ -103,7 +103,7 @@ export const EmailQuestionnaire = () => {
           </div>
           <div className='col-start-1 col-end-2 md:col-start-2 md:col-end-3 flex flex-col'>
             <label htmlFor='email_message' className='mb-2 text-sm md:text-md text-white'>
-              Have you trained in martial arts before? Which arts are you interested in at AMMA?
+              Have you trained in martial arts before? Which arts are you interested in at AMAA?
             </label>
             <textarea
               id='email_message'
