@@ -1,12 +1,8 @@
 import React from 'react';
 
-export type PricingProps = {
-  isBannerWidth?: boolean
-}
-
-export const Pricing = ({ isBannerWidth }: PricingProps) => (
+export const Pricing = () => (
   <div
-    className='flex grow items-center justify-center rounded-lg'
+    className='flex grow items-center justify-center rounded-lg h-full'
     style={{
       background:
         'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/steve_sdad_mtrmurray_r949r1.jpg)',
@@ -14,7 +10,7 @@ export const Pricing = ({ isBannerWidth }: PricingProps) => (
   >
     <ul
       aria-label='class schedule'
-      className={`flex flex-col bg-black/50 w-full px-4 py-4 ${isBannerWidth ? 'md:w-4/5 lg:w-3/4 xl:w-1/2 mx-16 sm:mx-0' : ''} items-start rounded-lg text-white`}
+      className='h-full flex flex-col bg-black/50 w-full px-4 py-4 items-start rounded-lg text-white'
     >
       <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline mb-1'>PRICING</h2>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
