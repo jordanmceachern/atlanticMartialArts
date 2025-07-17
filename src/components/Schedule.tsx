@@ -5,7 +5,7 @@ export const Schedule = () => (
     className='flex grow h-72 sm:h-96 w-full overflow-x-scroll max-w-[calc(100vw-32px)] rounded-lg'
     style={{
       background:
-        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,o_50/v1696165783/turny_kick_j5zrst.jpg)',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1696165783/AMAA/turny_kick_j5zrst.jpg)',
     }}
   >
     <div className='flex h-full w-full p-4 pb-8 min-w-[650px] min-h-[450px] sm:min-h-[300px] items-center justify-start bg-black/50 rounded-lg'>
