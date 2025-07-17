@@ -11,7 +11,7 @@ export const GmChoi = () => (
           className='h-36 w-full'
           style={{
             background:
-              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696250071/gmchoi_h6nlla.gif)'
+              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696250071/AMAA/gmchoi_h6nlla.gif)'
           }}
         />
       </div>

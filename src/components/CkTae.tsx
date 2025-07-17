@@ -11,7 +11,7 @@ const CkTae = () => (
           className='h-36 w-full'
           style={{
             background:
-              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696335813/tkchung_hdyrgl.jpg)'
+              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696335813/AMAA/tkchung_hdyrgl.jpg)'
           }}
         />
       </div>

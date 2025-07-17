@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 export const MoreInformation = ({ className } : { className?: string }) => (
   <Banner
     className={className}
-    backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709321533/fishbowl_mxaxrx.jpg'
+    backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709321533/AMAA/fishbowl_mxaxrx.jpg'
     backgroundPosition='center'>
     <div
       aria-label='more information'
