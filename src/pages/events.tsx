@@ -14,7 +14,7 @@ export const Events = ({ location }) => {
             className='h-full mx-auto'
             style={{
               background:
-                'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1744654444/summercamp_ec33bo.jpg)',
+                'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1744654444/AMAA/summercamp_ec33bo.jpg)',
             }}
             title={summerCampDescription}
           />
@@ -24,7 +24,7 @@ export const Events = ({ location }) => {
             className='h-full mx-auto'
             style={{
               background:
-                'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/ladies_self-defense_xg1opo.jpg)',
+                'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/AMAA/ladies_self-defense_xg1opo.jpg)',
             }}
             title={ladiesSelfDefenseDescription}
           />

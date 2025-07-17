@@ -19,7 +19,7 @@ export const Kickboxing = ({ location }) => {
                 className='h-full mx-auto'
                 style={{
                   background:
-                    'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1735919350/kickboxingGuys_yfgaru.jpg)',
+                    'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1735919350/AMAA/kickboxingGuys_yfgaru.jpg)',
                 }}
               />
               <div
@@ -27,7 +27,7 @@ export const Kickboxing = ({ location }) => {
                 className='absolute end-12 sm:end-40 bottom-0 h-40 w-28 mt-24 sm:mt-56 md:mt-44 rounded-full'
                 style={{
                 background:
-                  'right / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,c_fill,g_auto/v1735919346/icemanLogo_ojlxes.jpg)'
+                  'right / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,c_fill,g_auto/v1735919346/AMAA/icemanLogo_ojlxes.jpg)'
                 }}
               ></div>
             </div>
@@ -41,13 +41,13 @@ export const Kickboxing = ({ location }) => {
                 className='h-full mx-auto'
                 style={{
                   background:
-                  'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/teen_kickboxing_xwla1a.jpg)',
+                  'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/AMAA/teen_kickboxing_xwla1a.jpg)',
                 }}
               />
             </div>
             {/* Item 3 */}
             <Banner
-              backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1695585134/kick_boxing_sparring_lij9az.jpg'
+              backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1695585134/AMAA/kick_boxing_sparring_lij9az.jpg'
               backgroundPosition='center'
               className='h-72 sm:h-96'
             />

@@ -21,7 +21,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
   const displayedRouteName = routeName === 'home page' ? '' : routeName;
 
   return (
-    <div className='z-20 relative flex flex-wrap justify-self-start justify-start sm:justify-center sm:flex-nowrap sm:shadow border-black border-b bg-white shadow-black dark:bg-black dark:shadow-white'>
+    <div className='z-20 relative flex flex-wrap justify-self-start justify-start sm:justify-center sm:flex-nowrap sm:shadow border-black border-b bg-white shadow-slate dark:bg-slate dark:shadow-white'>
       <input className='mobile-menu hidden' type='checkbox' id='mobile-menu' />
       <div className='w-full flex items-center sm:hidden'>
         <label className='w-10 h-full flex flex-col border-r border-black/20' htmlFor='mobile-menu' aria-label='toggle mobile navigation'>
@@ -35,7 +35,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
             className={`${currentRoutename === '' ? 'h-4 w-16 ' : ''}-ml-10`}
             style={currentRoutename === '' ? {
               background:
-                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)',
+                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA/AMAA_mpjsg0.gif)',
             } : undefined}
           >
             <span className='uppercase'>
@@ -46,7 +46,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
       </div>
       <nav className='max-w-4xl flex flex-col sm:flex-row w-full' aria-label='main menu'>
         <div className='nav-items relative opacity-0 sm:opacity-100 sm:mt-0 sm:flex sm:grow'>
-          <div className='absolute mt-px sm:mt-0 bg-white dark:bg-black sm:bg-transparent sm:static z-10 grow flex-col sm:z-0 sm:flex sm:flex-row flex-nowrap sm:justify-evenly md:justify-between w-full'>
+          <div className='absolute mt-px sm:mt-0 bg-white dark:bg-slate sm:bg-transparent sm:static z-10 grow flex-col sm:z-0 sm:flex sm:flex-row flex-nowrap sm:justify-evenly md:justify-between w-full'>
             <Link
               to='/'
               className={`${currentRoutename === '' ? 'bg-blue/40 ' : ''} px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black dark:active:bg-white/30 dark:hover:bg-white/20 border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
@@ -56,7 +56,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
                 className='h-4 w-16 hidden sm:inline'
                 style={{
                   background:
-                    'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)',
+                    'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA/AMAA_mpjsg0.gif)',
                 }}
               ></div>
               <span className='inline sm:hidden'>

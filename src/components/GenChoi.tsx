@@ -11,7 +11,7 @@ export const GenChoi = () => (
           className='h-36 w-full'
           style={{
             background:
-              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1696250071/gen_choi_g4maul.gif)'
+              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1696250071/AMAA/gen_choi_g4maul.gif)'
           }}
         />
       </div>

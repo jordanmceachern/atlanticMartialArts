@@ -12,7 +12,7 @@ export const GmMurray = () => (
           className='h-36 w-full'
           style={{
             background:
-              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696250071/gmmurray_jdjhvw.jpg)'
+              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696250071/AMAA/gmmurray_jdjhvw.jpg)'
           }}
         />
       </div>

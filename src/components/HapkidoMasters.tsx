@@ -11,7 +11,7 @@ export const HapkidoMasters = () => (
     aria-label='founders of hap ki do'
     className='rounded-lg text-white flex flex-col items-center h-full w-full bg-cover bg-no-repeat'
     style={{
-      backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto,o_50,b_rgb:000/v1701109336/IMG_5006_cji4ve.jpg)',
+      backgroundImage: 'url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto,o_50,b_rgb:000/v1701109336/AMAA/IMG_5006_cji4ve.jpg)',
       backgroundPosition: 'top center'
     }}
   >

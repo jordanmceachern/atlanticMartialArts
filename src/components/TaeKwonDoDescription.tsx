@@ -6,7 +6,7 @@ export const TaeKwonDoDescription = () => (
     className='flex flex-col grow h-full justify-start rounded-lg'
     style={{
       background:
-        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701109336/IMG_5008_s4hv3k.jpg',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701109336/AMAA/IMG_5008_s4hv3k.jpg',
     }}
   >
     <div

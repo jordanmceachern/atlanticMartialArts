@@ -20,7 +20,7 @@ export const Information = ({ location }) => {
             className='col-start-1 col-end-2 rounded-lg text-white'
             style={{
               background:
-                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto,o_50/v1696165783/mastermurray2010_bbrdm5.jpg)',
+                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696165783/AMAA/mastermurray2010_bbrdm5.jpg)',
             }}
           >
             <div className='h-full flex flex-col items-start bg-black/50 px-4 pt-4 pb-10 md:pb-28 rounded-lg'>
@@ -58,14 +58,14 @@ export const Information = ({ location }) => {
             <Pricing />
           </div>
           <Banner
-            backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694544887/dojo_vdhf6m.jpg'
+            backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694544887/AMAA/dojo_vdhf6m.jpg'
             backgroundPosition='center'>
             <div
               aria-label='location'
               className={`flex flex-col bg-black/50 w-full px-4 pt-4 pb-10 items-start rounded-lg text-white`}
             >
               <h2 className='text-sm sm:text-md md:text-base w-full flex justify-center underline uppercase mb-1'>Location</h2>
-              <p className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
+              <p className='text-xs sm:text-sm md:text-md w-full'>
                 Atlantic Martial Arts Academy is located in the top floor studio of the Cultural
                 Centre Gym (Old YMCA by exhibition ground), at 28 Saunders Street, Fredericton, New Brunswick.
               </p>

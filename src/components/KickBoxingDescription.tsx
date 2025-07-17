@@ -5,7 +5,7 @@ export const KickBoxingDescription = () => (
     className='flex flex-col grow justify-start rounded-lg h-full'
     style={{
       background:
-        'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696177109/kickboxing_ohz7vc.jpg',
+        'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696177109/AMAA/kickboxing_ohz7vc.jpg',
     }}
   >
     <div

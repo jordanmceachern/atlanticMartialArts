@@ -60,7 +60,7 @@ export const EmailQuestionnaire = () => {
   }
 
   return (
-    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/pushups_wflq0c.jpg'>
+    <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/AMAA/pushups_wflq0c.jpg'>
       <form onSubmit={inquire} className='bg-black/40 text-white flex flex-col p-4 items-center rounded-md'>
         <h2 className='text-sm sm:text-md md:text-base mb-4 underline'>STUDENT INQUIRY</h2>
         <div className='mb-4 grid grid-cols-1 md:gap-4 md:grid-cols-2'>

@@ -5,7 +5,7 @@ export const Pricing = () => (
     className='flex grow items-center justify-center rounded-lg h-full'
     style={{
       background:
-        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/steve_sdad_mtrmurray_r949r1.jpg)',
+        'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694976469/AMAA/steve_sdad_mtrmurray_r949r1.jpg)',
     }}
   >
     <ul

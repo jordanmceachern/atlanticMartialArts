@@ -20,21 +20,21 @@ export const Taekwondo = ({ location }) => {
                   className='hidden md:inline md:col-start-1 md:col-end-2'
                   style={{
                     background:
-                      '100% center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1699190855/steve2_lcck7y.jpg)'
+                      '100% center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1699190855/AMAA/steve2_lcck7y.jpg)'
                   }}  
                 />
                 <div
                   className='col-start-1 md:col-start-2 col-end-5 md:col-end-4'
                   style={{
                     background:
-                      'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109339/IMG_5002_esxgbw.jpg)'
+                      'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701109339/AMAA/IMG_5002_esxgbw.jpg)'
                   }}
                 />
                 <div
                   className='hidden md:inline sm:col-start-4 md:col-end-5'
                   style={{
                     background:
-                      'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701111985/IMG_5008_s4hv3k.jpg)'
+                      'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1701111985/AMAA/IMG_5008_s4hv3k.jpg)'
                   }}  
                 />
               </div>
@@ -43,16 +43,16 @@ export const Taekwondo = ({ location }) => {
                 className='z-10 flex self-end h-[7.5rem] w-24 mt-36 sm:mt-52 rounded-full'
                 style={{
                   background:
-                    'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)'
+                    'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA/AMAA_mpjsg0.gif)'
                 }}
               ></div>
             </div>
             {/* Item 2 */}
-            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709318002/studentsjumpkick_tws6lb.jpg' className='h-full' />
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709318002/AMAA/studentsjumpkick_tws6lb.jpg' className='h-full' />
             {/* Item 3 */}
-            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/padkicking_rtdiod.jpg' className='h-full' />
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/AMAA/padkicking_rtdiod.jpg' className='h-full' />
             {/* Item 4 */}
-            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314081/mountainclimbers_oudb7c.jpg' className='h-full' />
+            <Banner backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314081/AMAA/mountainclimbers_oudb7c.jpg' className='h-full' />
           </CarouselWrapper>
           <div className='relative col-start-1 col-end-2 rounded-lg'>
             <TaeKwonDoDescription />

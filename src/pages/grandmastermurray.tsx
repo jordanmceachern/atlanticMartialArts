@@ -10,28 +10,28 @@ export const GrandMasterMurray = ({ location }) => {
             className='h-80 col-span-3 row-span-1'
             style={{
               background:
-                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1699190529/IMG_4955_hvzxfy.jpg)',
+                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1699190529/AMAA/IMG_4955_hvzxfy.jpg)',
             }}
           />
           <div
             className='col-span-3 row-start-2 row-end-4 hidden sm:flex'
             style={{
               background:
-                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701112091/IMG_5007_ry2kym.jpg)',
+                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1701112091/AMAA/IMG_5007_ry2kym.jpg)',
             }}
           />
           <div
             className='h-80 col-start-1 col-end-2 row-span-1 hidden sm:flex'
             style={{
               background:
-                '35% 0% / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696166600/knifedefense_iry44l.jpg)',
+                '35% 0% / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696166600/AMAA/knifedefense_iry44l.jpg)',
             }}
           />
           <div
             className='h-80 col-start-1 sm:col-start-2 col-end-4 row-span-1'
             style={{
               background:
-                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696165783/mastermurray2010_bbrdm5.jpg)',
+                'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1696165783/AMAA/mastermurray2010_bbrdm5.jpg)',
             }}
           />
           <div className='murray-content absolute inset-0 bg-black/40 flex justify-center overflow-y-auto'>

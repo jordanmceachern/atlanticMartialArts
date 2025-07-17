@@ -11,7 +11,7 @@ export const MRoss = () => (
           className='h-36 w-full'
           style={{
             background:
-              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1702393376/403410890_268798462847088_9192980248118517489_n_czbfun.jpg)'
+              'top / contain no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/f_auto,q_auto/v1702393376/AMAA/403410890_268798462847088_9192980248118517489_n_czbfun.jpg)'
           }}
         />
       </div>

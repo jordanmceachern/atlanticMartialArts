@@ -34,7 +34,7 @@ class ErrorBoundary extends React.Component<ComponentProps, ErrorState> {
             className='z-0 absolute inset-0 opacity-10'
             style={{
               background:
-                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA_mpjsg0.gif)'
+                'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMMA/AMAA_mpjsg0.gif)'
             }}
           />
           <div className='flex flex-col items-center max-w-[400px]'>
