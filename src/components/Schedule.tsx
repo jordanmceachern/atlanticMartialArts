@@ -83,7 +83,7 @@ export const Schedule = () => (
           <td className='text-center p-1'>-</td>
           <td className='text-center p-1'>7:30pm - 8:30pm</td>
           <td className='text-center p-1'>6:15pm - 7:15pm</td>
-          <td className='text-center p-1'>5:00pm - 6:00pm</td>
+          <td className='text-center p-1'>7:30pm - 8:30pm (until Sept.1)</td>
           <td className='text-center p-1'>-</td>
           <td className='text-center p-1'>-</td>
         </tr>
