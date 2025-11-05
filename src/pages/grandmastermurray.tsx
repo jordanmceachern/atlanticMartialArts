@@ -4,7 +4,7 @@ import PageLayout from '../components/PageLayout';
 export const GrandMasterMurray = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='flex flex-col grow items-center justify-start'>
+      <main className='flex flex-col grow items-center justify-start'>
         <div className='h-full w-full relative grid grid-rows-2 sm:grid-rows-4 grid-cols-3 md:min-w-[600px] max-w-[1040px]'>
           <div
             className='h-80 col-span-3 row-span-1'
@@ -75,7 +75,7 @@ export const GrandMasterMurray = ({ location }) => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </PageLayout>
   )
 };

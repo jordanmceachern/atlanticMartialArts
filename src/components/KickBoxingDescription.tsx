@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const KickBoxingDescription = () => (
-  <div
+  <article
     className='flex flex-col grow justify-start rounded-lg h-full'
     style={{
       background:
@@ -27,7 +27,7 @@ export const KickBoxingDescription = () => (
         Beginners are taught the basics, and everyone goes at their own pace.
       </p>
     </div>
-  </div>
+  </article>
 );
 
 export default KickBoxingDescription

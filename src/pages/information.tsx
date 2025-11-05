@@ -9,7 +9,7 @@ import EmailQuestionnaire from '../components/EmailQuestionnaire';
 export const Information = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='flex flex-col grow items-center justify-start'>
+      <main className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
           <EmailQuestionnaire />
           <div className='relative rounded-lg col-start-1 col-end-2 md:col-end-3'>
@@ -73,7 +73,7 @@ export const Information = ({ location }) => {
             </div>
           </Banner>
         </div>
-      </div>
+      </main>
     </PageLayout>
   );
 };

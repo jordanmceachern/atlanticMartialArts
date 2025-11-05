@@ -10,7 +10,7 @@ export const CarouselWrapper = (props) => {
 
   return (
     <>
-      <div className={`flex flex-col items-center h-80 sm:h-96 w-full ${props.wrapperClassName ? props.wrapperClassName : ''}`}>
+      <section className={`flex flex-col items-center h-80 sm:h-96 w-full ${props.wrapperClassName ? props.wrapperClassName : ''}`}>
         <Carousel
           autoplay={autoPlay}
           autoplayDelay={4000}
@@ -28,7 +28,7 @@ export const CarouselWrapper = (props) => {
         >
           {buttonText}
         </Button>
-      </div>
+      </section>
     </>
   )
 };
@@ -113,6 +113,21 @@ export const LandingCarousel = () => {
         />
       </div>
       {/* Item 4 */}
+      <div
+        aria-label='Photo of Mr.McNeill and Mr.Opray at their Hap Ki Do black belt testing.'
+        className='ease-in-out h-full w-full'
+        style={{
+          background:
+            'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1767021502/AMAA/davesB_adt02f.jpg)',
+        }}
+      >
+        <div className='inset-0 h-full w-full flex items-end justify-center'>
+          <div className='bg-black/50 mx-2 mb-16 flex px-3 py-2 rounded-lg text-white text-center text-sm'>
+            Congrats to Mr.McNeill and Mr.Opray for passing their Hap Ki Do black belt testing!
+          </div>
+        </div>
+      </div>
+      {/* Item 5 */}
       <div
         aria-label='Photo of Ms.Enman, Mr.Doyle, Mr.Bostick, Mr.McEachern, and Mr.Bostick Jr. Posing after passing their black belt testing.'
         className='ease-in-out h-full w-full'

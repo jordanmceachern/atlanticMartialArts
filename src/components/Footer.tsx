@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Footer = () => (
-  <div className='z-20 shadow w-full py-2 flex justify-center border-black border-b bg-white shadow-slate dark:bg-slate dark:shadow-white dark:text-white'>
+  <footer className='z-20 shadow w-full py-2 flex justify-center border-black border-b bg-white shadow-slate dark:bg-slate dark:shadow-white dark:text-white'>
     <div className='w-full flex justify-center items-center max-w-3xl'>
       <div
         aria-label='taekwondo logo'
@@ -31,7 +31,7 @@ export const Footer = () => (
         }}
       ></div>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

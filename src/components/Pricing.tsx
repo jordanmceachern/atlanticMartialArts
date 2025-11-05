@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Pricing = () => (
-  <div
+  <section
     className='flex grow items-center justify-center rounded-lg h-full'
     style={{
       background:
@@ -65,13 +65,16 @@ export const Pricing = () => (
         6 months<div className='ml-8 flex grow justify-end text-end'>15% off</div>
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-between flex flex-nowrap'>
-        12 months<div className='ml-8 flex grow justify-end text-end'>20% off + included uniform</div>
+        12 months<div className='ml-8 flex grow justify-end text-end'>20% off + uniform (* see note)</div>
+      </li>
+      <li className='text-xs sm:text-sm md:text-md w-full justify-center flex text-center mt-2 mb-1'>
+        * If using the family discount, conditions may apply. Contact for more details.
       </li>
       <li className='text-xs sm:text-sm md:text-md w-full justify-center flex text-center mt-1'>
         ALL PRICES INCLUDE TAX - Paid on the 1st of every month
       </li>
     </ul>
-  </div>
+  </section>
 )
 
 export default Pricing;

@@ -6,11 +6,11 @@ import MoreInformation from '../components/MoreInformation';
 export const FitnessCentre = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='fitness-centre flex flex-col px-4 sm:px-6 md:px-10 grow self-center items-center justify-start w-full md:min-w-[600px] max-w-[1040px]'>
-        <main className='mt-6 sm:mt-10 flex flex-col'>
+      <main className='fitness-centre flex flex-col px-4 sm:px-6 md:px-10 grow self-center items-center justify-start w-full md:min-w-[600px] max-w-[1040px]'>
+        <section className='mt-6 sm:mt-10 flex flex-col'>
           <p className='text-sm sm:text-base mb-4'>The fitness centre is currently open for use Tues 6pm - 7:30pm, Thurs 5pm - 7:30pm, and Mon/Wed/Fri 5:30pm - 8:30pm.</p>
           <p className='text-sm sm:text-base'>Pricing is $25/month or $60 for 3 months.</p>
-        </main>
+        </section>
         <Banner
           title='squat rack, multi-level weight bench, treadmill, bowflex, chest compression machine for pectorals muscles, and various handheld weights and equipment.'
           className='hidden sm:flex mt-4 sm:mt-6 md:mt-10 h-[200px] md:h-[500px] sm:h-92 w-full'
@@ -42,7 +42,7 @@ export const FitnessCentre = ({ location }) => {
           backgroundImage='https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1709314082/AMAA/newbags_ghlrvj.jpg'
         />
         <MoreInformation className='w-full mb-4 sm:mb-6 md:mb-10' />
-      </div>
+      </main>
     </PageLayout>
   )
 };

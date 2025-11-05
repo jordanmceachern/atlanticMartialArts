@@ -16,7 +16,7 @@ export const Banner = ({
   title
 }: BannerProps) => {
   return (
-    <div
+    <section
       className={`relative col-start-1 col-end-2 md:col-end-3 rounded-lg flex flex-col${className ? ` ${className}` : ''}`}
       style={{
         background:
@@ -27,7 +27,7 @@ export const Banner = ({
       <div className='flex flex-col grow w-full rounded-lg'>
         {children}
       </div>
-    </div>
+    </section>
   )
 }
 

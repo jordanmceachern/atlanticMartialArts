@@ -21,7 +21,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
   const displayedRouteName = routeName === 'home page' ? '' : routeName;
 
   return (
-    <div className='z-20 relative flex flex-wrap justify-self-start justify-start sm:justify-center sm:flex-nowrap sm:shadow border-black border-b bg-white shadow-slate dark:bg-slate dark:shadow-white'>
+    <header className='z-20 relative flex flex-wrap justify-self-start justify-start sm:justify-center sm:flex-nowrap sm:shadow border-black border-b bg-white shadow-slate dark:bg-slate dark:shadow-white'>
       <input className='mobile-menu hidden' type='checkbox' id='mobile-menu' />
       <div className='w-full flex items-center sm:hidden'>
         <label className='w-10 h-full flex flex-col border-r border-black/20' htmlFor='mobile-menu' aria-label='toggle mobile navigation'>
@@ -111,7 +111,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   )
 };
 

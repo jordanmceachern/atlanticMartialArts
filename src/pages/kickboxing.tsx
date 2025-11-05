@@ -9,7 +9,7 @@ export const Kickboxing = ({ location }) => {
 
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='flex grow items-start justify-center'>
+      <main className='flex grow items-start justify-center'>
         <div className='grid grid-cols-1 gap-4 m-4 md:min-w-[500px] max-w-[940px]'>
           <CarouselWrapper className='rounded-lg flex-nowrap col-start-1 col-end-2 md:col-end-3 overflow-y-hidden'>
             {/* Item 1 */}
@@ -57,7 +57,7 @@ export const Kickboxing = ({ location }) => {
           </div>
           <MoreInformation />
         </div>
-      </div>
+      </main>
     </PageLayout>
   );
 };

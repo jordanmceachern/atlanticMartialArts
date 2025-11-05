@@ -10,7 +10,7 @@ import { CarouselWrapper } from '../components/LandingCarousel';
 export const Hapkido = ({ location }) => {
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='flex flex-col grow items-center justify-start'>
+      <main className='flex flex-col grow items-center justify-start'>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 m-4 sm:mx-16 md:min-w-[500px] max-w-[940px]'>
           <CarouselWrapper wrapperClassName='col-start-1 col-end-2 md:col-end-3 overflow-y-hidden'>
             {/* Item 1 */}
@@ -47,7 +47,7 @@ export const Hapkido = ({ location }) => {
           </div>
           <MoreInformation />
         </div>
-      </div>
+      </main>
     </PageLayout>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import ViewMoreLess from './ViewMoreLess';
 
 export const TaeKwonDoDescription = () => (
-  <div
+  <article
     className='flex flex-col grow h-full justify-start rounded-lg'
     style={{
       background:
@@ -39,7 +39,7 @@ export const TaeKwonDoDescription = () => (
         </p>
       </ViewMoreLess>
     </div>
-  </div>
+  </article>
 )
 
 export default TaeKwonDoDescription

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const HapkidoDescription = () => (
-  <div
+  <article
     className='flex flex-col grow justify-start rounded-lg h-full'
     style={{
       background:
@@ -26,7 +26,7 @@ export const HapkidoDescription = () => (
         Students will learn the traditional form of the art as passed down from the founder Choi Yung Sool, to Grandmaster Chung Kee Tae, and from him to Master Murray.
       </p>
     </div>
-  </div>
+  </article>
 )
 
 export default HapkidoDescription

@@ -8,7 +8,7 @@ export const Events = ({ location }) => {
 
   return (
     <PageLayout currentPathname={location.pathname}>
-      <div className='flex flex-col px-4 sm:px-6 md:px-10 grow self-center items-center justify-start w-full md:min-w-[600px] max-w-[1040px]'>
+      <main className='flex flex-col px-4 sm:px-6 md:px-10 grow self-center items-center justify-start w-full md:min-w-[600px] max-w-[1040px]'>
         <div className='h-96 sm:h-[36rem] w-full my-4 sm:my-8'>
           <div
             className='h-full mx-auto'
@@ -30,7 +30,7 @@ export const Events = ({ location }) => {
           />
         </div>
         <MoreInformation className='w-full mb-4 sm:mb-6 md:mb-10' />
-      </div>
+      </main>
     </PageLayout>
   )
 };
