@@ -40,7 +40,7 @@ export const Taekwondo = ({ location }) => {
               </div>
               <div
                 aria-label='Atlantic Martial Arts Academy Tae Kwon Do logo'
-                className='z-10 flex self-end h-[7.5rem] w-24 mt-36 sm:mt-52 rounded-full'
+                className='z-10 absolute h-24 w-24 bottom-2 right-2 rounded-full'
                 style={{
                   background:
                     'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1694115864/AMAA/AMAA_mpjsg0.gif)'

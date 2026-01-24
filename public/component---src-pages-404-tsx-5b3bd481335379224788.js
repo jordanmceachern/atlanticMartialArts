@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkatlantic_martial_arts_academy=self.webpackChunkatlantic_martial_arts_academy||[]).push([[453],{5951:function(a,e,t){t.r(e),t.d(e,{App:function(){return r}});var n=t(758),c=t(8701);const r=a=>{let{location:e}=a;return n.createElement(c.A,{currentPathname:e.pathname},n.createElement("main",null,n.createElement("h1",{className:"mx-auto my-24 h-screen"},"404: Page Not Found")))};e.default=r}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-5b3bd481335379224788.js.map

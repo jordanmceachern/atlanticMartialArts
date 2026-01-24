@@ -19,7 +19,7 @@ export const Hapkido = ({ location }) => {
                 <h1 className='text-sm sm:text-md md:text-base w-full flex self-center items-center justify-center uppercase md:mt-10'>Home of the Canadian HapKiDo Association</h1>
                 <div
                   aria-label='Canadian Hapkido Association Logo'
-                  className='flex self-end h-20 w-20 mt-24 sm:mt-56 md:mt-44 rounded-full'
+                  className='z-10 absolute h-24 w-24 bottom-2 right-2 rounded-full'
                   style={{
                     background:
                       'right / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto,b_white,ar_1:1,c_fill,g_auto/v1695582177/AMAA/hapkidoLogo_pupiah.gif)'

@@ -1,6 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "atlantic-martial-arts-academy",
+  "version": "2.2.0",
+  "description": "website for Atlantic Martial Arts Academy",
   "license": "MIT",
   "scripts": {
     "fix": "eslint --fix:all",

@@ -3,6 +3,7 @@ import ErrorBoundary from './ErrorBoundary';
 import Navigation from './Navigation';
 import MetaData from './MetaData';
 import Footer from './Footer';
+import AgentSelector from './AgentSelector';
 import { Script } from "gatsby";
 
 export type PageLayoutProps = {
@@ -29,6 +30,7 @@ export const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
           </div>
         </div>
         <Footer />
+        <AgentSelector key={currentPathname} />
       </div>
     </ErrorBoundary>
   );
