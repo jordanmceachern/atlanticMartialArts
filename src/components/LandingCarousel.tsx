@@ -36,6 +36,19 @@ export const CarouselWrapper = (props) => {
 export const LandingCarousel = () => {
   return (
     <CarouselWrapper>
+      {/* <div
+        className='ease-in-out h-full w-full'
+        style={{
+          background:
+            'center / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1735662986/AMAA/amaa_students_c705i7.jpg)',
+        }}
+      >
+        <div className='inset-0 h-full w-full flex items-end justify-center'>
+          <div className='bg-black/50 mx-2 mb-16 px-3 py-2 rounded-lg text-white text-center'>
+            Class cancelled! No classes January 26th 2026 due to weather conditions.
+          </div>
+        </div>
+      </div> */}
       {/* Item 1 */}
       <div
         aria-label='Master Ross demonstrates breaking 2 cement stones using the hammer fist technique'
@@ -68,7 +81,7 @@ export const LandingCarousel = () => {
         }}
       />
       {/* <div
-        aria-label='Photo of Joseph McShane and Jordan McEachern demonstrating the orange belt form'
+        aria-label='Photo of Joseph Doyle and Jordan McEachern demonstrating the orange belt form'
         className='ease-in-out h-full w-full'
         style={{
           background:
@@ -124,21 +137,6 @@ export const LandingCarousel = () => {
         <div className='inset-0 h-full w-full flex items-end justify-center'>
           <div className='bg-black/50 mx-2 mb-16 flex px-3 py-2 rounded-lg text-white text-center text-sm'>
             Congrats to Mr.McNeill and Mr.Opray for passing their Hap Ki Do black belt testing!
-          </div>
-        </div>
-      </div>
-      {/* Item 5 */}
-      <div
-        aria-label='Photo of Ms.Enman, Mr.Doyle, Mr.Bostick, Mr.McEachern, and Mr.Bostick Jr. Posing after passing their black belt testing.'
-        className='ease-in-out h-full w-full'
-        style={{
-          background:
-            'top / cover no-repeat url(https://res.cloudinary.com/dtweazqf2/image/upload/q_auto,f_auto/v1758378488/AMAA/IMG_2235_kx0zjx.jpg)',
-        }}
-      >
-        <div className='inset-0 h-full w-full flex items-end justify-center'>
-          <div className='bg-black/50 mx-2 mb-16 flex px-3 py-2 rounded-lg text-white text-center text-sm'>
-            Congrats to Ms.Enman, Mr.Doyle, Mr.Bostick, Mr.McEachern, and Mr.Bostick Jr. for passing their black belt testing!
           </div>
         </div>
       </div>

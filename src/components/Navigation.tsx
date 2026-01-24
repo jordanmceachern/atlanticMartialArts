@@ -67,7 +67,7 @@ export const Navigation = ({ currentRoutename }: NavigationProps) => {
               to='/information'
               className={`${currentRoutename === 'information' ? 'bg-blue/40 ' : ''}px-1 py-1 text-sm sm:text-base w-full sm:w-auto border-black dark:active:bg-white/30 dark:hover:bg-white/20 border-b sm:border-0 flex justify-center items-center active:bg-black/30 hover:bg-black/20`}
             >
-              INFORMATION
+              INFORMATION & FAQ
             </Link>
             <Link
               to='/events'

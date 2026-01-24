@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'atlanticMartialArtsAcademy',
-    siteUrl: 'https://jordanmceachern.github.io',
+    siteUrl: 'https://atlanticmartialarts.ca',
     description:
       'Atlantic Martial Arts formally Maritime Martial Arts Academy.',
   },

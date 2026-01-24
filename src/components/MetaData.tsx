@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 export const MetaData = () => (
@@ -11,7 +12,7 @@ export const MetaData = () => (
     ></meta>
     <link rel="icon" href="https://res.cloudinary.com/dtweazqf2/image/upload/t_ammafavicon,q_auto,f_auto/v1694115864/AMAA/AMAA_mpjsg0.gif" />
     <link rel='canonical' href={process.env.SITE_URL} />
-    <link href="/global.css" rel="stylesheet"></link>
+    <link href={withPrefix('/global.css')} rel="stylesheet"></link>
   </Helmet>
 );
 

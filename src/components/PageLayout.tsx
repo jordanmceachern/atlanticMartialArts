@@ -3,8 +3,6 @@ import ErrorBoundary from './ErrorBoundary';
 import Navigation from './Navigation';
 import MetaData from './MetaData';
 import Footer from './Footer';
-import AgentSelector from './AgentSelector';
-import { Script } from "gatsby";
 
 export type PageLayoutProps = {
   children: ReactNode;
@@ -16,7 +14,6 @@ export const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
   return (
     <ErrorBoundary>
       <div className='relative flex flex-col h-fit min-h-screen text-black dark:text-white'>
-        <Script src='https://cdn.jotfor.ms/agent/embedjs/019818d8e0977b8587abadeb88b971bb3caa/embed.js?skipWelcome=1&maximizable=1' />
         <MetaData />
         <Navigation currentRoutename={currentRoutename} />
         <div className='main-content z-10 flex flex-col justify-start grow overflow-y-auto bg-gray-100 dark:bg-gray-500 relative'>
@@ -30,7 +27,6 @@ export const PageLayout = ({ children, currentPathname }: PageLayoutProps) => {
           </div>
         </div>
         <Footer />
-        <AgentSelector key={currentPathname} />
       </div>
     </ErrorBoundary>
   );
